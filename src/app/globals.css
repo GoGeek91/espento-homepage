@@ -2,32 +2,41 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+/* background gradient START */
+.bg-gradient:before {
+  left: -600px;
+  background: linear-gradient(180deg, #5441fa 0%, #ec5461 100%);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.bg-gradient:before,
+.bg-gradient:after {
+  content: " ";
+  position: absolute;
+  z-index: -1;
+  bottom: -524px;
+  width: 800px;
+  height: 800px;
+  opacity: 0.1;
+  filter: blur(50px);
+  border-radius: 9999px;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.bg-gradient:after {
+  right: -600px;
+  background: linear-gradient(180deg, #4e4ff5 0%, #3effd1 100%);
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+/* background gradient END */
+
+/* HeroBanner Gradient Start */
+
+.heroGradient {
+  background: radial-gradient(140% 107.13% at 50% 10%, transparent 37.41%, #63e 69.27%, #fff 100%);
 }
+
+.bgspider {
+  background-image: url("/images/backgroundNet.svg");
+  background-size: cover;
+}
+
+/* HeroBanner Gradient End */
