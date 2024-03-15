@@ -17,7 +17,7 @@ export const Header = () => {
           <Image src="images/logo.svg" width={120} height={30} alt="Espento" />
         </Link>
 
-        <div className="space-x-8 border border-white/10 bg-gradient-to-br from-white/20 to-white/5 backdrop-blur rounded-full py-2 px-6 leading-4">
+        <div className="space-x-8 border border-white/10 bg-gradient-to-br from-white/20 to-white/5 backdrop-blur rounded-full py-2 px-6 leading-4 fixed bottom-0">
           {navigation.map((item) => (
             <Link
               key={item.name}

@@ -3,8 +3,9 @@ import { Dapps } from "@/views/dapps";
 import { Globe } from "@/views/globe";
 import { Herobanner } from "@/views/herobanner";
 import { MediaPartner } from "@/views/mediaPartner";
+import { Partners } from "@/views/partners";
+import { Secure } from "@/views/secure";
 import { Stats } from "@/views/stats";
-import Image from "next/image";
 
 export default function Home() {
   return (
@@ -15,6 +16,8 @@ export default function Home() {
       <Bluecard />
       <Globe />
       <MediaPartner />
+      <Secure />
+      <Partners />
     </div>
   );
 }

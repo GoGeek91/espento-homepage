@@ -129,13 +129,12 @@ export const MediaPartner = () => {
             <h4 className="text-white font-light text-xs tracking-wider">DApps</h4>
           </div>
           <div className="space-y-4 text-center">
-            <h2 className="text-7xl font-bold bg-gradient-to-b from-secondary-default to-secondary-lighter text-transparent bg-clip-text tracking-wider">
-              The technology that powers innovation
+            <h2 className="xl:text-7xl lg:text-7xl md:text-3xl sm:text-3xl text-4xl font-bold bg-gradient-to-b from-white to-secondary-lighter text-transparent bg-clip-text tracking-wider">
+              Expanding Across Digital Frontiers
             </h2>
-            <p className="font-light text-white text-opacity-65 text-lg tracking-wider">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque sapiente numquam iste molestiae
-              provident eius incidunt sunt, vero cum dolore ipsam, sed voluptatem libero adipisci ut repellat
-              enim iusto labore.
+            <p className="font-light text-secondary-default xl:text-lg lg:text-lg md:text-base sm:text-base text-sm tracking-wider">
+              Experience Espento's presence on leading online platforms. Seamlessly access our innovative
+              ecosystem across popular platforms and join the revolution in decentralized finance today!
             </p>
           </div>
         </div>

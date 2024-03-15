@@ -1,28 +1,31 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+:root {
+  --gradientOne: #3e7afb;
+  --gradientTwo: #64d1ff;
+}
 /* background gradient START */
 .bg-gradient:before {
-  left: -600px;
+  left: 60px;
   background: linear-gradient(180deg, #5441fa 0%, #ec5461 100%);
 }
 
 .bg-gradient:before,
 .bg-gradient:after {
   content: " ";
-  position: absolute;
+  position: fixed;
   z-index: -1;
   bottom: -524px;
-  width: 800px;
-  height: 800px;
+  width: 300px;
+  height: 300px;
   opacity: 0.1;
   filter: blur(50px);
   border-radius: 9999px;
 }
 
 .bg-gradient:after {
-  right: -600px;
+  right: 60px;
   background: linear-gradient(180deg, #4e4ff5 0%, #3effd1 100%);
 }
 
@@ -40,3 +43,27 @@
 }
 
 /* HeroBanner Gradient End */
+.marqueLogos {
+  height: revert-layer !important;
+}
+/* DEmo Css */
+
+@media screen and (min-width: 1440px) {
+  .lines {
+    width: 100%;
+  }
+}
+.lines {
+  z-index: 1;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0;
+  display: flex;
+  position: absolute;
+}
+
+#lines-pattern {
+  stroke: rgb(99, 99, 249); /* Change stroke color */
+  stroke-width: 1; /* Change stroke width */
+}
