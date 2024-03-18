@@ -126,7 +126,7 @@ export const MediaPartner = () => {
         <div className="text-left max-w-3xl mx-auto py-10 w-full space-y-12">
           <div className="flex items-center border w-fit rounded-full px-3 py-1 border-primary-default border-opacity-30 space-x-1 mx-auto bg-primary-default bg-opacity-15">
             <ThreeStarIcon className="w-6 h-6" />
-            <h4 className="text-white font-light text-xs tracking-wider">DApps</h4>
+            <h4 className="text-white font-light text-xs tracking-wider">Digital</h4>
           </div>
           <div className="space-y-4 text-center">
             <h2 className="xl:text-7xl lg:text-7xl md:text-3xl sm:text-3xl text-4xl font-bold bg-gradient-to-b from-white to-secondary-lighter text-transparent bg-clip-text tracking-wider">

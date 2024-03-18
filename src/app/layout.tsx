@@ -22,6 +22,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${ubuntu.className} h-auto bg-no-repeat bg-fixed bg-[#030115] `}>
+        <video autoPlay loop muted playsInline className="absolute w-full opacity-60">
+          <source src="images/background.mp4" />
+        </video>
         <Header />
         {children}
         <Footer />

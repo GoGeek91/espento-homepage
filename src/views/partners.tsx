@@ -52,59 +52,29 @@ export const Partners = () => {
       {" "}
       <div className="mx-auto max-w-7xl items-center justify-between xl:py-24 lg:py-24 py-8 space-y-20 xl:px-8 lg:px-8 md:px-8 sm:px-8 px-4">
         <div className="bg-black rounded-3xl border-white border border-opacity-20">
-          <div className="relative bgspider">
-            <div className="xl:grid-cols-2 lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-2 grid-cols-1 xl:p-16 lg:p-16 md:p-16 sm:p-16 p-6 xl:gap-28 lg:gap-28 md:gap-18 sm:gap-10 gap-16">
-              <div className="space-y-7">
+          <div className="relative">
+            <div className="grid xl:grid-cols-2 items-center lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-2 grid-cols-1 xl:gap-28 lg:gap-28 md:gap-18 sm:gap-10 gap-16 relative">
+              <div className="space-y-7 bgspider  xl:p-16 lg:p-16 md:p-16 sm:p-16 p-6 object-cover">
                 <div className="flex items-center border w-fit rounded-full px-3 py-1 border-primary-default border-opacity-80 space-x-1 bg-primary-default bg-opacity-50">
                   <ThreeStarIcon className="w-6 h-6" />
-                  <h4 className="text-white font-light text-xs tracking-wider">DApps</h4>
+                  <h4 className="text-white font-light text-xs tracking-wider">Partners</h4>
                 </div>
                 <div className="space-y-5">
                   <h2 className="xl:text-5xl lg:text-5xl md:text-3xl sm:text-3xl text-xl font-bold text-white tracking-wider leading">
                     Our Valued Partners and Supporters
                   </h2>
                   <p className="text-white font-light text-opacity-85 xl:text-lg lg:text-lg md:text-base sm:text-base text-sm">
-                    Building Strong Collaborations and Community Engagement"
+                    Building Strong Collaborations and Community Engagement
                   </p>
-                  <div className="flex items-center space-x-3">
-                    <Link
-                      href="#"
-                      className="bg-white px-4 py-1.5 flex w-fit border border-white text-black font-normal rounded-md"
-                    >
-                      Lorem Ipsum
-                    </Link>
-                    <Link
-                      href="#"
-                      className="px-4 py-1.5 flex w-fit border border-white text-white font-normal rounded-md"
-                    >
-                      Lorem Ipsum
-                    </Link>
-                  </div>
                 </div>
               </div>
-              <div className="space-y-6">
+              <div className="space-y-6 items-center">
                 <div className="w-full">
                   <div className="space-y-6">
-                    <div className="before:opacity-20 after:opacity-20">
-                      <Marquee pauseOnHover>
-                        {marqueSlider.map((marqueSliders) => (
-                          <div className="flex items-center space-x-6 " key={marqueSliders.id}>
-                            <div className="flex flex-shrink-0 bg-white w-20 h-20 rounded-full p-3 ml-5">
-                              <Image
-                                src={marqueSliders.imageUrl}
-                                width={200}
-                                height={200}
-                                alt={marqueSliders.alt}
-                              />
-                            </div>
-                          </div>
-                        ))}
-                      </Marquee>
-                    </div>
-                    <Marquee pauseOnHover direction="right">
+                    {/* <Marquee pauseOnHover gradient gradientWidth={120} gradientColor="#000">
                       {marqueSlider.map((marqueSliders) => (
                         <div className="flex items-center space-x-6" key={marqueSliders.id}>
-                          <div className="flex flex-shrink-0 bg-white w-20 h-20 rounded-full p-3 ml-5">
+                          <div className="flex flex-shrink-0 bg-white w-16 h-16 rounded-full p-3 ml-5">
                             <Image
                               src={marqueSliders.imageUrl}
                               width={200}
@@ -115,10 +85,10 @@ export const Partners = () => {
                         </div>
                       ))}
                     </Marquee>
-                    <Marquee pauseOnHover>
+                    <Marquee pauseOnHover gradient gradientWidth={120} gradientColor="#000" direction="right">
                       {marqueSlider.map((marqueSliders) => (
                         <div className="flex items-center space-x-6" key={marqueSliders.id}>
-                          <div className="flex flex-shrink-0 bg-white w-20 h-20 rounded-full p-3 ml-5">
+                          <div className="flex flex-shrink-0 bg-white w-16 h-16 rounded-full p-3 ml-5">
                             <Image
                               src={marqueSliders.imageUrl}
                               width={200}
@@ -128,14 +98,22 @@ export const Partners = () => {
                           </div>
                         </div>
                       ))}
-                    </Marquee>{" "}
-                    {/* <Image
-                      src="images/dapps-icons.svg"
-                      width={700}
-                      height={700}
-                      alt="espento"
-                      className="absolute -top-10 left-50"
-                    /> */}
+                    </Marquee>
+                    <Marquee pauseOnHover gradient gradientWidth={120} gradientColor="#000" delay={0.2}>
+                      {marqueSlider.map((marqueSliders) => (
+                        <div className="flex items-center space-x-6" key={marqueSliders.id}>
+                          <div className="flex flex-shrink-0 bg-white w-16 h-16 rounded-full p-3 ml-5">
+                            <Image
+                              src={marqueSliders.imageUrl}
+                              width={200}
+                              height={200}
+                              alt={marqueSliders.alt}
+                            />
+                          </div>
+                        </div>
+                      ))}
+                    </Marquee>{" "} */}
+                    <Image src="images/dapps-icons.svg" width={700} height={700} alt="espento" className="" />
                   </div>
                 </div>
               </div>

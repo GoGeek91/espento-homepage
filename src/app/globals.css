@@ -42,6 +42,11 @@
   background-size: cover;
 }
 
+.bgspiders {
+  background-image: url("/images/partnerSpiderBg.svg");
+  background-size: cover;
+}
+
 /* HeroBanner Gradient End */
 .marqueLogos {
   height: revert-layer !important;
@@ -66,4 +71,8 @@
 #lines-pattern {
   stroke: rgb(99, 99, 249); /* Change stroke color */
   stroke-width: 1; /* Change stroke width */
+}
+
+.gradient-border {
+  border-image: linear-gradient(#d0d0d000, #d0d0d0, #d0d0d000) 1; /* Use a gradient image for the border */
 }

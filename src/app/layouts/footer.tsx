@@ -3,7 +3,7 @@ import { Facebook } from "../commonIcon";
 import Image from "next/image";
 const navigation = {
   solutions: [
-    { name: "Marketing", href: "#" },
+    { name: "Marketing", href: "https://espento.com/profile" },
     { name: "Analytics", href: "#" },
     { name: "Commerce", href: "#" },
     { name: "Insights", href: "#" },
@@ -57,7 +57,10 @@ const navigation = {
 export const Footer = () => {
   return (
     <>
-      <footer className="bg-gray-900" aria-labelledby="footer-heading">
+      <footer
+        className="border-t border-secondary-lighter border-opacity-20"
+        aria-labelledby="footer-heading"
+      >
         <h2 id="footer-heading" className="sr-only">
           Footer
         </h2>
@@ -80,7 +83,7 @@ export const Footer = () => {
             <div className="mt-16 grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">
               <div className="md:grid md:grid-cols-2 md:gap-8">
                 <div>
-                  <h3 className="text-sm font-semibold leading-6 text-white">Solutions</h3>
+                  <h3 className="text-sm font-semibold leading-6 text-white">About</h3>
                   <ul role="list" className="mt-6 space-y-4">
                     {navigation.solutions.map((item) => (
                       <li key={item.name}>
@@ -92,7 +95,7 @@ export const Footer = () => {
                   </ul>
                 </div>
                 <div className="mt-10 md:mt-0">
-                  <h3 className="text-sm font-semibold leading-6 text-white">Support</h3>
+                  <h3 className="text-sm font-semibold leading-6 text-white">Products</h3>
                   <ul role="list" className="mt-6 space-y-4">
                     {navigation.support.map((item) => (
                       <li key={item.name}>
