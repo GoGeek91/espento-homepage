@@ -58,7 +58,7 @@ export const Bluecard = () => {
                 </div>
                 <div className="xl:space-y-5 lg:space-y-5 md:space-y-5 sm:space-y-5 space-y-4">
                   <h2 className="xl:text-5xl lg:text-5xl md:text-xl sm:text-xl text-2xl font-bold text-white tracking-wider leading text-shadow-xl">
-                    Empowered by Espento's Dynamic Blockchain
+                    Empowered by Espento&apos;s Dynamic Blockchain
                   </h2>
                   <p className="text-white font-light xl:text-lg lg:text-lg md:text-base sm:text-base text-sm text-opacity-85">
                     Experience the power of innovation with Espento Blockchain. Seamlessly merge security,

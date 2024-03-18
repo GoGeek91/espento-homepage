@@ -41,8 +41,8 @@ export const Secure = () => {
               Tailor Your Experience to Your Needs
             </h2>
             <p className="font-light text-white text-opacity-65 text-lg tracking-wider">
-              Discover the Revolutionary Capabilities Driving Espento's Blockchain Innovation and Transforming
-              the Future of Decentralized Finance.
+              Discover the Revolutionary Capabilities Driving Espento&lsquo;s Blockchain Innovation and
+              Transforming the Future of Decentralized Finance.
             </p>
           </div>
         </div>

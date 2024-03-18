@@ -133,7 +133,7 @@ export const MediaPartner = () => {
               Expanding Across Digital Frontiers
             </h2>
             <p className="font-light text-secondary-default xl:text-lg lg:text-lg md:text-base sm:text-base text-sm tracking-wider">
-              Experience Espento's presence on leading online platforms. Seamlessly access our innovative
+              Experience Espento&apos;s presence on leading online platforms. Seamlessly access our innovative
               ecosystem across popular platforms and join the revolution in decentralized finance today!
             </p>
           </div>
