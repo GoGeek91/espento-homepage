@@ -5,7 +5,7 @@ import React from "react";
 
 export const Stats = () => {
   return (
-    <div className="relative mx-auto max-w-6xl items-center justify-between xl:py-24 lg:py-24 py-8 space-y-20 xl:px-8 lg:px-8 md:px-8 sm:px-8 px-4">
+    <div className="relative mx-auto max-w-6xl items-center justify-between xl:py-24 lg:py-24 py-8 xl:space-y-20 lg:space-y-20 md:space-y-20 sm:space-y-20 space-y-3 xl:px-8 lg:px-8 md:px-8 sm:px-8 px-4">
       <div className="">
         {/* Background gradient */}
         <div className="absolute left-10 z-40">
@@ -16,10 +16,10 @@ export const Stats = () => {
           <img src="images/stats/statsBg.svg" alt="" />
         </div>
       </div>
-      <div className="relative bg-black bg-opacity-100 text-center rounded-3xl p-8 border border-secondary-dark xl:space-y-10 lg:space-y-10 md:space-y-10 sm:space-y-10 space-y-0">
+      <div className="relative bg-black bg-opacity-100 text-center rounded-3xl p-8 border border-secondary-dark xl:space-y-10 lg:space-y-10 md:space-y-10 sm:space-y-10 space-y-8">
         <div className="mx-auto space-y-1">
-          <h2 className="text-4xl font-semibold bg-gradient-to-b from-primary-default to-primary-lighter text-transparent bg-clip-text">
-            <span className="font-light text-white">Impressive</span> on-chain data.
+          <h2 className="xl:text-4xl lg:text-4xl md:text-4xl sm:text-4xl text-2xl font-semibold bg-gradient-to-b from-primary-default to-primary-lighter text-transparent bg-clip-text">
+            <span className="font-light text-white">Impressive</span> on-chain data
           </h2>
           <div className="flex items-center w-fit rounded-full mx-auto">
             <Image src="images/bnbchain.svg" width={120} height={40} alt="espento" />
@@ -27,7 +27,7 @@ export const Stats = () => {
         </div>
 
         <div className="xl:space-y-10 lg:space-y-10 md:space-y-10 sm:space-y-10 space-y-10">
-          <div className="grid xl:grid-cols-3 lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-3 grid-cols-1 xl:space-y-0 lg:space-y-0 md:space-y-0 sm:space-y-0 space-y-8">
+          <div className="grid xl:grid-cols-3 lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-3 grid-cols-1 xl:space-y-0 lg:space-y-0 md:space-y-0 sm:space-y-0 space-y-8 xl:mt-0 lg:mt-0 md:mt-0 sm:mt-0 mt-10">
             {/* First Stats */}
             <div className="gradient-border xl:border-r lg:border-r md:border-r sm:border-r border-0 space-y-2">
               <h2 className="text-white font-medium text-2xl">$75,484,248</h2>
@@ -58,7 +58,7 @@ export const Stats = () => {
             </div>
           </div>
         </div>
-        <div className="flex items-center space-x-3 w-fit mx-auto z-50 relative">
+        <div className="flex items-center space-x-3 w-fit mx-auto z-50 relative ">
           <Link href="#">
             <Image src="images/coingecko.svg" width={116} height={27} alt="espento" />
           </Link>

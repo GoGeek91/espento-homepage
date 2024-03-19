@@ -6,7 +6,7 @@ import React from "react";
 export const Herobanner = () => {
   return (
     <>
-      <div className="mx-auto relative z-40 max-w-7xl sm:px-6 lg:px-8 px-4 xl:space-y-10 lg:space-y-10 md:space-y-10 sm:space-y-10 space-y-5 py-10">
+      <div className="mx-auto relative z-40 max-w-7xl sm:px-6 lg:px-8 px-4 xl:space-y-10 lg:space-y-10 md:space-y-10 sm:space-y-10 space-y-5 xl:pt-10 lg:pt-10 md:pt-10 sm:pt-10 xl:pb-10 lg:pb-10 md:pb-10 sm:pb-10 pb-4 pt-4">
         <div className="grid xl:grid-cols-2 lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-2 grid-cols-1 xl:pt-24 lg:pt-24 md:pt-24 sm:pt-24 pt-0">
           <div className="space-y-6">
             <div className="flex items-center border w-fit rounded-full px-3 py-1 border-primary-default border-opacity-30 space-x-2 bg-primary-default bg-opacity-15">
