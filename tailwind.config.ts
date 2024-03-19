@@ -31,6 +31,20 @@ const config = {
           dark: "#474747",
         },
       },
+      keyframes: {
+        fadeOut: {
+          "0%": { opacity: "1" },
+          "100%": { opacity: "0" },
+        },
+        fadeIn: {
+          "0%": { opacity: "0" },
+          "100%": { opacity: "1" },
+        },
+      },
+      animation: {
+        fadeOut: "fadeOut 0.5s ease-out",
+        fadeIn: "fadeIn 0.5s ease-in",
+      },
     },
   },
   plugins: [],

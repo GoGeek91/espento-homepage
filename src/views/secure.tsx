@@ -50,9 +50,14 @@ export const Secure = () => {
           {secureBox.map((secureBoxs) => (
             <div
               key={secureBoxs.id}
-              className="text-left rounded-3xl border border-secondary-dark p-6 relative"
+              className="text-left rounded-3xl border border-secondary-dark p-6 relative card-gradient"
             >
-              <div className="bg-[#171227] rounded-full border border-secondary-dark absolute border-b-2 border-b-secondary-dark left-8 -top-8 p-2.5">
+              <img
+                src="/images/developer-bg-blue.svg"
+                className="w-full object-cover absolute left-0 top-0 opacity-20"
+              />
+
+              <div className="bg-[#14112c] rounded-full border border-secondary-dark absolute border-b-2 border-b-secondary-dark left-8 -top-8 p-2.5">
                 <Image src={secureBoxs.ImageUrl} width={44} height={44} alt="Espento" className="m-auto" />
               </div>
               <div className="mt-9 space-y-1">

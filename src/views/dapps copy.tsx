@@ -24,7 +24,7 @@ export const Dapps = () => {
         {/* Swap */}
         <div className="bg-white bg-opacity-5 text-left rounded-3xl p-8 border border-secondary-dark space-y-8">
           <Image
-            src="/images/dapps/swap.svg"
+            src="/images/dapps/swap.png"
             width={500}
             height={500}
             alt="espento swap"

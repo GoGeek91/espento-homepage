@@ -7,14 +7,14 @@ const dapp = [
   {
     id: "1",
     href: "#",
-    ImageUrl: "/images/dapps/swap.svg",
+    ImageUrl: "/images/dapps/swap.png",
     title: "Swap",
     subtitle: "Streamline Your Token Exchanges with Ease",
   },
   {
     id: "2",
     href: "#",
-    ImageUrl: "/images/dapps/bridge.svg",
+    ImageUrl: "/images/dapps/bridge.png",
     title: "Bridge",
     subtitle: "Fuel Your Espento Journey: Bridge Your Crypto and Access Powerful DApps    ",
   },
@@ -35,14 +35,14 @@ const dapp = [
   {
     id: "5",
     href: "#",
-    ImageUrl: "/images/dapps/dao.svg",
+    ImageUrl: "/images/dapps/dao.png",
     title: "Dao",
     subtitle: "Empowering Community Governance: Join the Espento DAO Movement Today",
   },
   {
     id: "6",
     href: "#",
-    ImageUrl: "/images/dapps/lending.svg",
+    ImageUrl: "/images/dapps/lending.png",
     title: "Lending",
     subtitle: "Grow Your Wealth: Espento's Lending Program Offers Lucrative Opportunities",
   },
@@ -89,13 +89,13 @@ export const Dapps = () => {
             href={dapps.href}
             className="bg-white bg-opacity-5 text-left rounded-3xl p-8 border border-secondary-dark space-y-8"
           >
-            <div className="w-48 h-48 mx-auto items-center">
+            <div className="w-36 h-36 mx-auto items-center">
               <Image
                 src={dapps.ImageUrl}
                 width={500}
                 height={500}
                 alt="espento swap"
-                className="opacity-70 hover:opacity-100"
+                className="hover:opacity-100"
               />
             </div>
             <div className="space-y-2">

@@ -1,147 +1,204 @@
-import React from "react";
-import { Facebook } from "../commonIcon";
 import Image from "next/image";
-const navigation = {
-  solutions: [
-    { name: "Marketing", href: "https://espento.com/profile" },
-    { name: "Analytics", href: "#" },
-    { name: "Commerce", href: "#" },
-    { name: "Insights", href: "#" },
+const MetamaskWallet = "https://assets.espento.com/images/homePage/metamaskWallet.svg";
+const Coincapmarket = "https://assets.espento.com/images/homePage/coinmarketcap.svg";
+const BscScan = "https://assets.espento.com/images/homePage/bscscan.svg";
+const coingecgo = "https://assets.espento.com/images/homePage/coingecko.svg";
+const pancakeswap = "https://assets.espento.com/images/homePage/pancake.svg";
+
+import Link from "next/link";
+
+interface navigationItem {
+  name: string;
+  href: string;
+  info?: string;
+  targetBlank?: boolean;
+  icon?: string;
+}
+
+interface NavtigationDto {
+  [name: string]: navigationItem[];
+}
+
+const navigation: NavtigationDto = {
+  About: [
+    { name: "Espento Profile", href: "" },
+    { name: "Terms of Use", href: "" },
+    { name: "Privacy Policy", href: "" },
+    { name: "Disclaimer", href: "" },
+    { name: "Careers", href: "", info: "Hiring" },
+    { name: "Espento Tokenomics", href: "" },
+    {
+      name: "SPENT Audit",
+      href: "https://gopluslabs.io/token-security/56/0x178fbe1cf4775fbdb9756d6349195a05799c0fe5",
+      targetBlank: true,
+      icon: "https://assets.espento.com/images/homePage/auditIcon.png",
+    },
   ],
-  support: [
-    { name: "Pricing", href: "#" },
-    { name: "Documentation", href: "#" },
-    { name: "Guides", href: "#" },
-    { name: "API Status", href: "#" },
+  Products: [
+    { name: "Yield Farm", href: "" },
+    { name: "Stake", href: "" },
+    { name: "Espento Swap", href: "" },
+    { name: "Liquidity", href: "" },
+    { name: "Lend - Borrow", href: "" },
+    { name: "Bridge", href: "" },
   ],
-  company: [
-    { name: "About", href: "#" },
-    { name: "Blog", href: "#" },
-    { name: "Jobs", href: "#" },
-    { name: "Press", href: "#" },
-    { name: "Partners", href: "#" },
+  Resources: [
+    { name: "Docs", href: "", info: "Soon" },
+    { name: "Brand Assets", href: "" },
+    { name: "Espento Whitepaper", href: "", targetBlank: true },
+    { name: "Espento Blog", href: "" },
+    { name: "Support", href: "" },
+    { name: "Contest", href: "" },
+    { name: "Espento Roadmap", href: "" },
   ],
-  legal: [
-    { name: "Claim", href: "#" },
-    { name: "Privacy", href: "#" },
-    { name: "Terms", href: "#" },
-  ],
-  social: [
-    {
-      name: "Facebook",
-      href: "#",
-      icon: <Facebook className="w-5 h-5" />,
-    },
-    {
-      name: "Instagram",
-      href: "#",
-      icon: <Facebook className="w-5 h-5" />,
-    },
-    {
-      name: "X",
-      href: "#",
-      icon: <Facebook className="w-5 h-5" />,
-    },
-    {
-      name: "GitHub",
-      href: "#",
-      icon: <Facebook className="w-5 h-5" />,
-    },
-    {
-      name: "YouTube",
-      href: "#",
-      icon: <Facebook className="w-5 h-5" />,
-    },
+  Community: [
+    { name: "Twitter", href: "https://twitter.com/espentoofficial" },
+    { name: "Telegram", href: "https://telegram.me/espento_news" },
+    { name: "Reddit", href: "https://www.reddit.com/r/espentoofficial/" },
+    { name: "Medium", href: "https://medium.com/@espentoofficial" },
+    { name: "Discord", href: "https://discord.com/invite/7BUJ9UTBgE" },
+    { name: "Facebook", href: "https://www.facebook.com/espentoofficial" },
+    { name: "Instagram", href: "https://www.instagram.com/espentoofficial" },
+    { name: "Youtube", href: "https://www.youtube.com/@espentoofficial" },
+    { name: "Github", href: "https://github.com/espentoofficial" },
   ],
 };
-export const Footer = () => {
+
+export function Footer() {
   return (
-    <>
-      <footer
-        className="border-t border-secondary-lighter border-opacity-20"
-        aria-labelledby="footer-heading"
-      >
-        <h2 id="footer-heading" className="sr-only">
-          Footer
-        </h2>
-        <div className="mx-auto max-w-7xl px-6 pb-8 pt-16 sm:pt-24 lg:px-8 lg:pt-32">
-          <div className="xl:grid xl:grid-cols-3 xl:gap-8">
-            <div className="space-y-8">
-              <Image src="images/logo.svg" width={120} height={70} alt="espento logo" />
-              <p className="text-sm leading-6 text-gray-300">
-                Making the world a better place through constructing elegant hierarchies.
-              </p>
-              <div className="flex space-x-6">
-                {navigation.social.map((item) => (
-                  <a key={item.name} href={item.href} className="text-gray-500 hover:text-gray-400">
-                    <span className="sr-only">{item.name}</span>
-                    {item.icon}
-                  </a>
-                ))}
-              </div>
+    <footer className="border-t border-secondary-lighter border-opacity-20">
+      <div className="mx-auto max-w-7xl px-6 py-16">
+        <div className="grid grid-cols-2 gap-4 lg:grid-cols-6 xl:grid-cols-6">
+          {/* First Box */}
+          <div className="col-span-2 mr-10 space-y-2 md:mt-0 md:space-y-4 lg:space-y-4 xl:space-y-4">
+            <div className="w-44">
+              <Link href="/" passHref={true} className="flex cursor-pointer">
+                <Image alt="Espento" src="images/logo.svg" width={160} height={31} />
+              </Link>
             </div>
-            <div className="mt-16 grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">
-              <div className="md:grid md:grid-cols-2 md:gap-8">
-                <div>
-                  <h3 className="text-sm font-semibold leading-6 text-white">About</h3>
-                  <ul role="list" className="mt-6 space-y-4">
-                    {navigation.solutions.map((item) => (
-                      <li key={item.name}>
-                        <a href={item.href} className="text-sm leading-6 text-gray-300 hover:text-white">
-                          {item.name}
-                        </a>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-                <div className="mt-10 md:mt-0">
-                  <h3 className="text-sm font-semibold leading-6 text-white">Products</h3>
-                  <ul role="list" className="mt-6 space-y-4">
-                    {navigation.support.map((item) => (
-                      <li key={item.name}>
-                        <a href={item.href} className="text-sm leading-6 text-gray-300 hover:text-white">
-                          {item.name}
-                        </a>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              </div>
-              <div className="md:grid md:grid-cols-2 md:gap-8">
-                <div>
-                  <h3 className="text-sm font-semibold leading-6 text-white">Company</h3>
-                  <ul role="list" className="mt-6 space-y-4">
-                    {navigation.company.map((item) => (
-                      <li key={item.name}>
-                        <a href={item.href} className="text-sm leading-6 text-gray-300 hover:text-white">
-                          {item.name}
-                        </a>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-                <div className="mt-10 md:mt-0">
-                  <h3 className="text-sm font-semibold leading-6 text-white">Legal</h3>
-                  <ul role="list" className="mt-6 space-y-4">
-                    {navigation.legal.map((item) => (
-                      <li key={item.name}>
-                        <a href={item.href} className="text-sm leading-6 text-gray-300 hover:text-white">
-                          {item.name}
-                        </a>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="mt-16 border-t border-white/10 pt-8 sm:mt-20 lg:mt-24">
-            <p className="text-xs leading-5 text-gray-400">
-              &copy; 2020 Your Company, Inc. All rights reserved.
+
+            <p className="text-justify text-sm font-light text-white">
+              Espento is the most competitive decentralized platform for earning crypto in the DeFi market.
             </p>
+
+            <div className="hidden md:block lg:block xl:block 2xl:block">
+              <div className="flex items-center space-x-3"></div>
+            </div>
+            {/* NOTE: website update  */}
+            <h1 className="font-light text-gray-300 text-sm">
+              © {new Date().getFullYear()} Espento DAO Community
+            </h1>
+            {/* <div>
+                {" "}
+                <p className="font-medium text-gray-800">Website last updated</p>
+                <p className="font-light text-gray-400">September 9, 2022</p>
+              </div> */}
+          </div>
+          {/* Second Box */}
+          <div>
+            <h3 className="text-sm font-normal text-white">About</h3>
+            <ul
+              role="list"
+              className="mt-0 space-y-0.5 md:mt-4 md:space-y-3 lg:mt-4 lg:space-y-3 xl:mt-4 xl:space-y-3"
+            >
+              {navigation.About.map((item) => (
+                <li key={item.name} className="flex items-center space-x-1">
+                  <Link
+                    href={item.href}
+                    target={item.targetBlank ? "_blank" : "_parent"}
+                    rel="noopener"
+                    className="flex items-center space-x-0.5 text-xs font-light text-white opacity-70 hover:opacity-100"
+                  >
+                    <span> {item.name}</span>
+                    {item.icon && <img src={item.icon} className="w-5" alt="Espento" />}
+                  </Link>
+                  {item.info && (
+                    <div className="bg-primary-default text-white text-xs rounded-full px-1">{item.info}</div>
+                  )}
+                </li>
+              ))}
+            </ul>
+          </div>
+          {/* Third Box */}
+          <div>
+            <h3 className="text-sm font-normal text-white">Products</h3>
+            <ul
+              role="list"
+              className="mt-0 space-y-0.5 md:mt-4 md:space-y-3 lg:mt-4 lg:space-y-3 xl:mt-4 xl:space-y-3"
+            >
+              {navigation.Products.map((item) => (
+                <li key={item.name} className="flex items-center space-x-1">
+                  <Link
+                    href={item.href}
+                    className="flex items-center space-x-0.5 text-xs font-light text-white opacity-70 hover:opacity-100"
+                  >
+                    {item.name}
+                  </Link>
+                  {item.info && (
+                    <div className="bg-primary-default text-white text-xs rounded-full px-1">{item.info}</div>
+                  )}
+                </li>
+              ))}
+            </ul>
+          </div>
+          {/* Fourth Box */}
+          <div>
+            <h3 className="text-sm font-normal text-white">Resource</h3>
+            <ul
+              role="list"
+              className="mt-0 space-y-0.5 md:mt-4 md:space-y-3 lg:mt-4 lg:space-y-3 xl:mt-4 xl:space-y-3"
+            >
+              {navigation.Resources.map((item) => (
+                <li key={item.name} className="flex items-center space-x-1">
+                  <Link
+                    href={item.href}
+                    target={item.targetBlank ? "_blank" : "_parent"}
+                    rel="noopener"
+                    className="flex items-center space-x-0.5 text-xs font-light text-white opacity-70 hover:opacity-100"
+                  >
+                    {item.name}
+                  </Link>
+                  {item.info && (
+                    <div className="bg-primary-default text-white text-xs rounded-full px-1">{item.info}</div>
+                  )}
+                </li>
+              ))}
+            </ul>
+          </div>
+          {/* Five Box */}
+          <div>
+            <h3 className="text-sm font-normal text-white">Community</h3>
+            <ul
+              role="list"
+              className="mt-0 space-y-0.5 md:mt-4 md:space-y-3 lg:mt-4 lg:space-y-3 xl:mt-4 xl:space-y-3"
+            >
+              {navigation.Community.map((item) => (
+                <li key={item.name} className="flex items-center space-x-1">
+                  <Link
+                    href={item.href}
+                    target="_blank"
+                    rel="noopener"
+                    className="flex items-center space-x-0.5 text-xs font-light text-white opacity-70 hover:opacity-100"
+                  >
+                    {item.name}
+                  </Link>
+                  {item.info && (
+                    <span className="text-success-500 ml-2 rounded-md bg-blue-100 px-2 text-xs font-light text-blue-500">
+                      {item.info}
+                    </span>
+                  )}
+                </li>
+              ))}
+            </ul>
           </div>
         </div>
-      </footer>
-    </>
+
+        {/* <div className="pt-6 text-center">
+          <Text color="gray" Size="small" type="light">
+            © 2023 Espento. | All rights reserved
+          </Text>
+        </div> */}
+      </div>
+    </footer>
   );
-};
+}
