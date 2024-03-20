@@ -92,3 +92,6 @@
     transform: translateY(0);
   }
 }
+.sliding-text:hover {
+  transform: translateX(5px); /* Adjust the value based on your preference */
+}

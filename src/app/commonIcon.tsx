@@ -409,6 +409,22 @@ export const Facebook: React.FC<React.SVGAttributes<SVGElement>> = (props) => {
     </svg>
   );
 };
+
+export const MenuIcon: React.FC<React.SVGAttributes<SVGElement>> = (props) => {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" {...props} x="0" y="0" viewBox="0 0 384 384">
+      <g>
+        <path
+          d="M368 154.668H16c-8.832 0-16-7.168-16-16s7.168-16 16-16h352c8.832 0 16 7.168 16 16s-7.168 16-16 16zM368 32H16C7.168 32 0 24.832 0 16S7.168 0 16 0h352c8.832 0 16 7.168 16 16s-7.168 16-16 16zM368 277.332H16c-8.832 0-16-7.168-16-16s7.168-16 16-16h352c8.832 0 16 7.168 16 16s-7.168 16-16 16zm0 0"
+          fill="currentColor"
+          opacity="1"
+          data-original="currentColor"
+        ></path>
+      </g>
+    </svg>
+  );
+};
+
 export const LaunchingIcon: React.FC<React.SVGAttributes<SVGElement>> = (props) => {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" version="1.1" {...props} x="0" y="0" viewBox="0 0 511 512">
