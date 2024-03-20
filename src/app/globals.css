@@ -95,3 +95,14 @@
 .sliding-text:hover {
   transform: translateX(5px); /* Adjust the value based on your preference */
 }
+.blinkin {
+  animation: 2s blinking alternate infinite linear;
+}
+@keyframes blinking {
+  from {
+    opacity: 0.2;
+  }
+  to {
+    opacity: 1;
+  }
+}

@@ -30,7 +30,7 @@ export const Stats = () => {
           <div className="grid xl:grid-cols-3 lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-3 grid-cols-1 xl:space-y-0 lg:space-y-0 md:space-y-0 sm:space-y-0 space-y-8 xl:mt-0 lg:mt-0 md:mt-0 sm:mt-0 mt-10">
             {/* First Stats */}
             <div className="gradient-border xl:border-r lg:border-r md:border-r sm:border-r border-0 space-y-2">
-              <h2 className="text-white font-medium text-2xl">$75,484,248</h2>
+              <h2 className="text-white font-medium text-2xl">$73,698,436</h2>
               <p className="text-white text-opacity-50 font-light text-sm">Fully Diluted Valuation</p>
             </div>
             {/* Second Stats */}
@@ -59,11 +59,11 @@ export const Stats = () => {
           </div>
         </div>
         <div className="flex items-center space-x-3 w-fit mx-auto z-50 relative ">
-          <Link href="#">
+          <Link href="https://www.coingecko.com/en/coins/espento" target="_blank">
             <Image src="images/coingecko.svg" width={116} height={27} alt="espento" />
           </Link>
           <div className="w-[1px] bg-white h-6"></div>
-          <Link href="#">
+          <Link href="https://coinmarketcap.com/currencies/espento/" target="_blank">
             <Image src="images/coinmarketcap.svg" width={158} height={29} alt="espento" />
           </Link>
         </div>

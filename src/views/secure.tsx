@@ -29,7 +29,7 @@ const secureBox = [
 
 export const Secure = () => {
   return (
-    <div className="mx-auto max-w-7xl sm:px-6 lg:px-8 px-4 xl:space-y-10 lg:space-y-10 md:space-y-10 sm:space-y-10 space-y-5 py-10 bg-transparent">
+    <div className="mx-auto max-w-7xl sm:px-6 lg:px-8 px-4 xl:space-y-10 lg:space-y-10 md:space-y-10 sm:space-y-10 space-y-5 py-5 bg-transparent">
       <div className="relative xl:py-24 lg:py-24 py-8 xl:space-y-14 lg:space-y-14 space-y-8 ">
         <div className="text-left max-w-4xl mx-auto py-10 w-full space-y-12">
           <div className="flex items-center border w-fit rounded-full px-3 py-1 border-primary-default border-opacity-30 space-x-1 mx-auto bg-primary-default bg-opacity-15">

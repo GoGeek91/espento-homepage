@@ -6,14 +6,14 @@ import React from "react";
 const dapp = [
   {
     id: "1",
-    href: "#",
+    href: "",
     ImageUrl: "/images/dapps/swap.png",
     title: "Swap",
     subtitle: "Streamline Your Token Exchanges with Ease",
   },
   {
     id: "2",
-    href: "#",
+    href: "https://bridge.espento.network/",
     ImageUrl: "/images/dapps/bridge.png",
     title: "Bridge",
     subtitle: "Fuel Your Espento Journey: Bridge Your Crypto and Access Powerful DApps    ",
@@ -21,14 +21,14 @@ const dapp = [
   {
     id: "3",
     href: "#",
-    ImageUrl: "/images/dapps/stake.svg",
+    ImageUrl: "/images/dapps/stake.png",
     title: "Stake",
     subtitle: "Earn Passive Income & Build the Future of DeFi Together",
   },
   {
     id: "4",
     href: "#",
-    ImageUrl: "/images/dapps/game.svg",
+    ImageUrl: "/images/dapps/game.png",
     title: "Games",
     subtitle: "Experience Thrilling Adventures and Earn Rewards with Espento Games",
   },
@@ -49,14 +49,14 @@ const dapp = [
   {
     id: "7",
     href: "#",
-    ImageUrl: "/images/dapps/borrow.svg",
+    ImageUrl: "/images/dapps/borrow.png",
     title: "Borrowing",
     subtitle: "Your Trusted Partner in De-Fi Growth and Prosperity",
   },
   {
     id: "8",
     href: "#",
-    ImageUrl: "/images/dapps/wallet.svg",
+    ImageUrl: "/images/dapps/wallet.png",
     title: "Wallet",
     subtitle: "Store, Send, and Receive with Confidence: The Ultimate Tool for Effortless Crypto Management",
   },
@@ -82,14 +82,14 @@ export const Dapps = () => {
         </div>
       </div>
 
-      <div className="grid xl:grid-cols-4 lg:grid-cols-4 md:grid-cols-4 sm:grid-cols-4 grid-cols-1 gap-4">
+      <div className="grid xl:grid-cols-4 lg:grid-cols-4 md:grid-cols-4 sm:grid-cols-4 grid-cols-2 gap-4">
         {dapp.map((dapps) => (
           <Link
             key={dapps.id}
             href={dapps.href}
-            className="bg-white bg-opacity-5 text-left rounded-3xl p-8 border border-secondary-dark space-y-8"
+            className="bg-white bg-opacity-5 text-left rounded-3xl xl:p-8 lg:p-8 md:p-8 sm:p-8 p-2 border border-secondary-dark xl:space-y-6 lg:space-y-6 md:space-y-6 sm:space-y-6 space-y-8"
           >
-            <div className="w-36 h-36 mx-auto items-center">
+            <div className="xl:w-36 xl:h-32 lg:w-36 lg:h-32 md:w-36 md:h-32 sm:w-36 sm:h-32 w-36 h-28 mx-auto items-center">
               <Image
                 src={dapps.ImageUrl}
                 width={500}
@@ -98,9 +98,9 @@ export const Dapps = () => {
                 className="hover:opacity-100"
               />
             </div>
-            <div className="space-y-2">
-              <h2 className="text-base text-white">{dapps.title}</h2>
-              <p className="text-sm text-white font-light text-opacity-70">{dapps.subtitle}</p>
+            <div className="space-y-2 text-center pb-3">
+              <h2 className="text-sm text-white">{dapps.title}</h2>
+              <p className="text-xs text-white font-light text-opacity-70">{dapps.subtitle}</p>
             </div>
           </Link>
         ))}

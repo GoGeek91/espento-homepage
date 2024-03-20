@@ -21,12 +21,12 @@ interface NavtigationDto {
 
 const navigation: NavtigationDto = {
   About: [
-    { name: "Espento Profile", href: "" },
-    { name: "Terms of Use", href: "" },
-    { name: "Privacy Policy", href: "" },
-    { name: "Disclaimer", href: "" },
-    { name: "Careers", href: "", info: "Hiring" },
-    { name: "Espento Tokenomics", href: "" },
+    { name: "Espento Profile", href: "https://espento.com/profile" },
+    { name: "Terms of Use", href: "https://espento.com/terms" },
+    { name: "Privacy Policy", href: "https://espento.com/policy" },
+    { name: "Disclaimer", href: "https://espento.com/disclaimer" },
+    { name: "Careers", href: "https://espento.com/career", info: "Hiring" },
+    { name: "Espento Tokenomics", href: "https://espento.com/tokenomics" },
     {
       name: "SPENT Audit",
       href: "https://gopluslabs.io/token-security/56/0x178fbe1cf4775fbdb9756d6349195a05799c0fe5",
@@ -35,21 +35,21 @@ const navigation: NavtigationDto = {
     },
   ],
   Products: [
-    { name: "Yield Farm", href: "" },
-    { name: "Stake", href: "" },
-    { name: "Espento Swap", href: "" },
-    { name: "Liquidity", href: "" },
-    { name: "Lend - Borrow", href: "" },
-    { name: "Bridge", href: "" },
+    { name: "Yield Farm", href: "https://espento.com/farm" },
+    { name: "Stake", href: "https://espento.com/stake" },
+    { name: "Espento Swap", href: "https://espento.com/swap" },
+    { name: "Liquidity", href: "https://espento.com/liquidity" },
+    { name: "Lend - Borrow", href: "https://espento.com/borrow" },
+    { name: "Bridge", href: "https://espento.com/bridge" },
   ],
   Resources: [
-    { name: "Docs", href: "", info: "Soon" },
-    { name: "Brand Assets", href: "" },
-    { name: "Espento Whitepaper", href: "", targetBlank: true },
-    { name: "Espento Blog", href: "" },
-    { name: "Support", href: "" },
-    { name: "Contest", href: "" },
-    { name: "Espento Roadmap", href: "" },
+    { name: "Docs", href: "https://espento.com/info", info: "Soon" },
+    { name: "Brand Assets", href: "https://espento.com/brandAssets" },
+    { name: "Espento Whitepaper", href: "https://assets.espento.com/whitepaper.pdf", targetBlank: true },
+    { name: "Espento Blog", href: "https://espento.com/blog" },
+    { name: "Support", href: "https://espento.com/support" },
+    { name: "Contest", href: "https://espento.com/contest" },
+    { name: "Espento Roadmap", href: "https://espento.com/roadmap" },
   ],
   Community: [
     { name: "Twitter", href: "https://twitter.com/espentoofficial" },
@@ -96,10 +96,12 @@ export function Footer() {
           </div>
           {/* Second Box */}
           <div>
-            <h3 className="text-sm font-normal text-white">About</h3>
+            <h3 className="xl:text-sm lg:text-sm md:text-sm sm:text-sm text-base font-normal text-white">
+              About
+            </h3>
             <ul
               role="list"
-              className="mt-0 space-y-0.5 md:mt-4 md:space-y-3 lg:mt-4 lg:space-y-3 xl:mt-4 xl:space-y-3"
+              className="mt-2 space-y-2 md:mt-4 md:space-y-3 lg:mt-4 lg:space-y-3 xl:mt-4 xl:space-y-3 xl:text-sm lg:text-sm md:text-sm sm:text-sm text-base"
             >
               {navigation.About.map((item) => (
                 <li key={item.name} className="flex items-center space-x-1">
@@ -107,7 +109,7 @@ export function Footer() {
                     href={item.href}
                     target={item.targetBlank ? "_blank" : "_parent"}
                     rel="noopener"
-                    className="flex items-center space-x-0.5 text-xs font-light text-white opacity-70 hover:opacity-100"
+                    className="flex items-center space-x-0.5 xl:text-xs lg:text-xs md:text-xs sm:text-xs text-sm  font-light text-white opacity-70 hover:opacity-100"
                   >
                     <span> {item.name}</span>
                     {item.icon && <img src={item.icon} className="w-5" alt="Espento" />}
@@ -121,16 +123,18 @@ export function Footer() {
           </div>
           {/* Third Box */}
           <div>
-            <h3 className="text-sm font-normal text-white">Products</h3>
+            <h3 className="xl:text-sm lg:text-sm md:text-sm sm:text-sm text-base font-normal text-white">
+              Products
+            </h3>
             <ul
               role="list"
-              className="mt-0 space-y-0.5 md:mt-4 md:space-y-3 lg:mt-4 lg:space-y-3 xl:mt-4 xl:space-y-3"
+              className="mt-2 space-y-2 md:mt-4 md:space-y-3 lg:mt-4 lg:space-y-3 xl:mt-4 xl:space-y-3 xl:text-sm lg:text-sm md:text-sm sm:text-sm text-base"
             >
               {navigation.Products.map((item) => (
                 <li key={item.name} className="flex items-center space-x-1">
                   <Link
                     href={item.href}
-                    className="flex items-center space-x-0.5 text-xs font-light text-white opacity-70 hover:opacity-100"
+                    className="flex items-center space-x-0.5 xl:text-xs lg:text-xs md:text-xs sm:text-xs text-sm font-light text-white opacity-70 hover:opacity-100"
                   >
                     {item.name}
                   </Link>
@@ -143,10 +147,12 @@ export function Footer() {
           </div>
           {/* Fourth Box */}
           <div>
-            <h3 className="text-sm font-normal text-white">Resource</h3>
+            <h3 className="xl:text-sm lg:text-sm md:text-sm sm:text-sm text-base font-normal text-white">
+              Resource
+            </h3>
             <ul
               role="list"
-              className="mt-0 space-y-0.5 md:mt-4 md:space-y-3 lg:mt-4 lg:space-y-3 xl:mt-4 xl:space-y-3"
+              className="mt-2 space-y-2 md:mt-4 md:space-y-3 lg:mt-4 lg:space-y-3 xl:mt-4 xl:space-y-3 xl:text-sm lg:text-sm md:text-sm sm:text-sm text-base"
             >
               {navigation.Resources.map((item) => (
                 <li key={item.name} className="flex items-center space-x-1">
@@ -154,7 +160,7 @@ export function Footer() {
                     href={item.href}
                     target={item.targetBlank ? "_blank" : "_parent"}
                     rel="noopener"
-                    className="flex items-center space-x-0.5 text-xs font-light text-white opacity-70 hover:opacity-100"
+                    className="flex items-center space-x-0.5 xl:text-xs lg:text-xs md:text-xs sm:text-xs text-sm  font-light text-white opacity-70 hover:opacity-100"
                   >
                     {item.name}
                   </Link>
@@ -167,10 +173,12 @@ export function Footer() {
           </div>
           {/* Five Box */}
           <div>
-            <h3 className="text-sm font-normal text-white">Community</h3>
+            <h3 className="xl:text-sm lg:text-sm md:text-sm sm:text-sm text-base font-normal text-white">
+              Community
+            </h3>
             <ul
               role="list"
-              className="mt-0 space-y-0.5 md:mt-4 md:space-y-3 lg:mt-4 lg:space-y-3 xl:mt-4 xl:space-y-3"
+              className="mt-2 space-y-2 md:mt-4 md:space-y-3 lg:mt-4 lg:space-y-3 xl:mt-4 xl:space-y-3 xl:text-sm lg:text-sm md:text-sm sm:text-sm text-base"
             >
               {navigation.Community.map((item) => (
                 <li key={item.name} className="flex items-center space-x-1">
@@ -178,7 +186,7 @@ export function Footer() {
                     href={item.href}
                     target="_blank"
                     rel="noopener"
-                    className="flex items-center space-x-0.5 text-xs font-light text-white opacity-70 hover:opacity-100"
+                    className="flex items-center space-x-0.5 xl:text-xs lg:text-xs md:text-xs sm:text-xs text-sm font-light text-white opacity-70 hover:opacity-100"
                   >
                     {item.name}
                   </Link>

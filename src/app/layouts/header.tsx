@@ -34,7 +34,7 @@ const DropdownNav = [
       {
         id: 3,
         name: "Bridge",
-        href: "https://espento.com/bridge",
+        href: "https://bridge.espento.network/",
         targetBlank: false,
       },
     ],
@@ -152,7 +152,7 @@ export const Header = () => {
         {/* ////////////////// END Desktop ////////////////// */}
 
         <Link
-          href="#"
+          href="https://espento.com/swap"
           className="bg-primary-default text-sm xl:font-normal lg:font-normal md:font-normal sm:font-normal font-medium tracking-wide px-3 py-2 rounded-lg text-secondary-default flex items-center space-x-0.5"
         >
           <p>Launch dApp</p>

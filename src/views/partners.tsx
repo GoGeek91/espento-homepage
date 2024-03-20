@@ -113,7 +113,13 @@ export const Partners = () => {
                         </div>
                       ))}
                     </Marquee>{" "} */}
-                    <Image src="images/dapps-icons.svg" width={700} height={700} alt="espento" className="" />
+                    <Image
+                      src="images/dapps-icons.svg"
+                      width={700}
+                      height={700}
+                      alt="espento"
+                      className="blinkin"
+                    />
                   </div>
                 </div>
               </div>
