@@ -133,9 +133,8 @@ export const Header = () => {
 
           {/* Single Link */}
           {navigation.map((item) => (
-            <div className="items-center inline-flex space-x-1">
+            <div className="items-center inline-flex space-x-1" key={item.name}>
               <Link
-                key={item.name}
                 href={item.href}
                 className="tracking-wide text-secondary-lighter hover:text-secondary-default font-light text-sm"
               >
@@ -234,12 +233,11 @@ export const Header = () => {
 
                             {/* Single Link */}
                             {navigation.map((item) => (
-                              <div className="items-center inline-flex space-x-1 py-4 border-b border-gray-600 w-full last:border-0">
-                                <Link
-                                  key={item.name}
-                                  href={item.href}
-                                  className="tracking-wide text-base text-white"
-                                >
+                              <div
+                                className="items-center inline-flex space-x-1 py-4 border-b border-gray-600 w-full last:border-0"
+                                key={item.name}
+                              >
+                                <Link href={item.href} className="tracking-wide text-base text-white">
                                   {item.name}
                                 </Link>
                                 {item.info && (
