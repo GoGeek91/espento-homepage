@@ -106,3 +106,43 @@
     opacity: 1;
   }
 }
+
+.blog-family p {
+  font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+  font-size: 20px;
+}
+
+.blog-family h1 {
+  font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+  font-size: 20px;
+  text-align: justify;
+}
+
+.blog-family h2 {
+  font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+  font-size: 20px;
+  text-align: justify;
+}
+
+.blog-family h3 {
+  font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+  font-size: 20px;
+  text-align: justify;
+}
+
+.blog-family h4 {
+  font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+  font-size: 20px;
+  text-align: justify;
+}
+
+.blog-family h5 {
+  font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+  font-size: 20px;
+  text-align: justify;
+}
+.blog-family h6 {
+  font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+  font-size: 20px;
+  text-align: justify;
+}

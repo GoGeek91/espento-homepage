@@ -19,30 +19,44 @@ export default function Home() {
     };
   });
   return (
-    <main className="flex flex-col">
-      <h1 className="text-3xl font-bold">My Next.Js Blog Site</h1>
-
-      <section className="py-10">
-        <h2 className="text-2xl font-blod">Latest Blogs</h2>
-
-        <div className="py-2">
+    <>
+      <div className="mx-auto max-w-7xl items-center justify-between space-y-20 py-8 px-4 sm:px-8 md:px-8 lg:py-24 lg:px-8 xl:py-24 xl:px-8">
+        <div className="grid grid-cols-4">
           {blogs.map((blog) => (
-            <Link href={"/blogs/" + blog.slug} passHref key={blog.slug}>
-              <div className="py-2 flex justify-between align-middle gap-2">
-                <div>
-                  <h3 className="text-lg font-blod">{blog.meta.title}</h3>
-                  <div>
-                    <p className="text-gray-400">{blog.meta.description}</p>
-                  </div>
-                  <div className="my-auto text-gray-400">
-                    <p>{blog.meta.date}</p>
-                  </div>
-                </div>
+            <Link
+              href={"/blogs/" + blog.slug}
+              passHref
+              key={blog.slug}
+              className="bg-slate-800 p-4 rounded-md"
+            >
+              <div>
+                <Image
+                  src="https://miro.medium.com/v2/resize:fit:1400/format:webp/1*qTgdAeqFQ5z4Oho5JtUzAg.png"
+                  width={300}
+                  height={400}
+                  alt="Espento Blog"
+                  className="rounded-md"
+                />
               </div>
+              <div className="flex items-center justify-between py-3">
+                <h2 className="text-sm text-secondary-default font-light">{blog.meta.date}</h2>
+                <h3 className="bg-primary-default rounded-full leading-none px-1.5 py-1 font-light text-xs text-secondary-default">
+                  {blog.meta.category}
+                </h3>
+              </div>
+
+              <div className="space-y-1.5">
+                <h2 className="text-secondary-default font-normal text-sm">{blog.meta.title}</h2>
+                <p className="text-secondary-default text-opacity-65 font-light text-xs">
+                  {blog.meta.description}
+                </p>
+              </div>
+
+              <div className="">by espento</div>
             </Link>
           ))}
         </div>
-      </section>
-    </main>
+      </div>
+    </>
   );
 }
