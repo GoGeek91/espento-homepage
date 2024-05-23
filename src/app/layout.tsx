@@ -43,13 +43,10 @@ export default function RootLayout({
           name="keywords"
           content="Web3, decentralized finance, blockchain technology, cryptocurrency, smart contracts, NFTs"
         />
-        <link rel="canonical" href="https://www.yourwebsite.com/web3-page" />
+        <link rel="canonical" href="https://espento.com/" />
         <meta name="robots" content="index, follow"></meta>
       </Head>
       <body className={`${ubuntu.className} h-auto bg-no-repeat bg-fixed bg-[#030115] `}>
-        <video autoPlay loop muted playsInline className="absolute w-full opacity-60">
-          <source src="images/background.mp4" />
-        </video>
         <Header />
         {children}
         <Footer />

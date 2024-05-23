@@ -1,4 +1,4 @@
-import { ThreeStarIcon } from "@/app/commonIcon";
+import { ThreeStarIcon } from "../commonIcon";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -122,17 +122,17 @@ const marqueSlider1 = [
 export const MediaPartner = () => {
   return (
     <>
-      <div className="bg-media-partner bg-cover relative xl:py-24 lg:py-24 py-8 xl:space-y-14 lg:space-y-14 space-y-8 ">
-        <div className="text-left max-w-3xl mx-auto py-10 w-full space-y-12">
-          <div className="flex items-center border w-fit rounded-full px-3 py-1 border-primary-default border-opacity-30 space-x-1 mx-auto bg-primary-default bg-opacity-15">
-            <ThreeStarIcon className="w-6 h-6" />
-            <h4 className="text-white font-light text-xs tracking-wider">Digital</h4>
+      <div className="bg-media-partner relative space-y-8 bg-cover py-8 lg:space-y-14 lg:py-24 xl:space-y-14 xl:py-24 ">
+        <div className="mx-auto w-full max-w-3xl space-y-12 py-10 text-left">
+          <div className="border-primary-default bg-primary-default bg-opacity-15 mx-auto flex w-fit items-center space-x-1 rounded-full border border-opacity-30 px-3 py-1">
+            <ThreeStarIcon className="h-6 w-6" />
+            <h4 className="text-xs font-light tracking-wider text-white">Digital</h4>
           </div>
           <div className="space-y-4 text-center">
-            <h2 className="xl:text-7xl lg:text-7xl md:text-3xl sm:text-3xl text-4xl font-bold bg-gradient-to-b from-white to-secondary-lighter text-transparent bg-clip-text tracking-wider">
+            <h2 className="to-secondary-lighter bg-gradient-to-b from-white bg-clip-text text-4xl font-semibold tracking-wider text-transparent sm:text-3xl md:text-3xl lg:text-7xl xl:text-7xl">
               Expanding Across Digital Frontiers
             </h2>
-            <p className="font-light text-secondary-default xl:text-lg lg:text-lg md:text-base sm:text-base text-sm tracking-wider">
+            <p className="text-secondary-default text-sm font-light tracking-wider sm:text-base md:text-base lg:text-lg xl:text-lg">
               Experience Espento&apos;s presence on leading online platforms. Seamlessly access our innovative
               ecosystem across popular platforms and join the revolution in decentralized finance today!
             </p>
@@ -147,7 +147,7 @@ export const MediaPartner = () => {
                   <Link
                     href={marqueSliders.href}
                     target="_blank"
-                    className="flex flex-shrink-0 bg-white w-30 h-16 rounded-md p-3 ml-5"
+                    className="w-30 ml-5 flex h-16 flex-shrink-0 rounded-md bg-white p-3"
                   >
                     <Image src={marqueSliders.imageUrl} width={200} height={200} alt={marqueSliders.alt} />
                   </Link>
@@ -160,7 +160,7 @@ export const MediaPartner = () => {
                   <Link
                     href={marqueSliders1.href}
                     target="_blank"
-                    className="flex flex-shrink-0 bg-white w-30 h-16 rounded-md px-4 py-3 ml-5"
+                    className="w-30 ml-5 flex h-16 flex-shrink-0 rounded-md bg-white px-4 py-3"
                   >
                     <Image src={marqueSliders1.imageUrl} width={200} height={200} alt={marqueSliders1.alt} />
                   </Link>

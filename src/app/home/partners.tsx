@@ -1,8 +1,8 @@
-import { ThreeStarIcon } from "@/app/commonIcon";
+import { ThreeStarIcon } from "../commonIcon";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import Marquee from "react-fast-marquee";
+
 const marqueSlider = [
   {
     id: "1",
@@ -50,25 +50,25 @@ export const Partners = () => {
   return (
     <div>
       {" "}
-      <div className="mx-auto max-w-7xl items-center justify-between xl:py-24 lg:py-24 py-8 space-y-20 xl:px-8 lg:px-8 md:px-8 sm:px-8 px-4">
-        <div className="bg-black rounded-3xl border-white border border-opacity-20">
+      <div className="mx-auto max-w-7xl items-center justify-between space-y-20 py-8 px-4 sm:px-8 md:px-8 lg:py-24 lg:px-8 xl:py-24 xl:px-8">
+        <div className="rounded-3xl border border-white border-opacity-20 bg-black">
           <div className="relative">
-            <div className="grid xl:grid-cols-2 items-center lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-2 grid-cols-1 xl:gap-28 lg:gap-28 md:gap-18 sm:gap-10 gap-16 relative">
-              <div className="space-y-7 bgspider  xl:p-16 lg:p-16 md:p-16 sm:p-16 p-6 object-cover">
-                <div className="flex items-center border w-fit rounded-full px-3 py-1 border-primary-default border-opacity-80 space-x-1 bg-primary-default bg-opacity-50">
-                  <ThreeStarIcon className="w-6 h-6" />
-                  <h4 className="text-white font-light text-xs tracking-wider">Partners</h4>
+            <div className="md:gap-18 relative grid grid-cols-1 items-center gap-16 sm:grid-cols-2 sm:gap-10 md:grid-cols-2 lg:grid-cols-2 lg:gap-28 xl:grid-cols-2 xl:gap-28">
+              <div className="bgspider space-y-7  object-cover p-6 sm:p-16 md:p-16 lg:p-16 xl:p-16">
+                <div className="border-primary-default bg-primary-default flex w-fit items-center space-x-1 rounded-full border border-opacity-80 bg-opacity-50 px-3 py-1">
+                  <ThreeStarIcon className="h-6 w-6" />
+                  <h4 className="text-xs font-light tracking-wider text-white">Partners</h4>
                 </div>
                 <div className="space-y-5">
-                  <h2 className="xl:text-5xl lg:text-5xl md:text-3xl sm:text-3xl text-xl font-bold text-white tracking-wider leading">
+                  <h2 className="leading text-xl font-semibold tracking-wider text-white sm:text-3xl md:text-3xl lg:text-5xl xl:text-5xl">
                     Our Valued Partners and Supporters
                   </h2>
-                  <p className="text-white font-light text-opacity-85 xl:text-lg lg:text-lg md:text-base sm:text-base text-sm">
+                  <p className="text-opacity-85 text-sm font-light text-white sm:text-base md:text-base lg:text-lg xl:text-lg">
                     Building Strong Collaborations and Community Engagement
                   </p>
                 </div>
               </div>
-              <div className="space-y-6 items-center">
+              <div className="items-center space-y-6">
                 <div className="w-full">
                   <div className="space-y-6">
                     {/* <Marquee pauseOnHover gradient gradientWidth={120} gradientColor="#000">
