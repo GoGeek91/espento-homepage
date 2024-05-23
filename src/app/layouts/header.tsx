@@ -98,7 +98,7 @@ export const Header = () => {
     <div className="mx-auto max-w-7xl sm:px-6 lg:px-8 px-4 xl:space-y-10 lg:space-y-10 md:space-y-10 sm:space-y-10 space-y-5 py-4 bg-transparent z-50 relative">
       <div className="flex items-center justify-between">
         <Link href="#">
-          <Image src="images/logo.svg" width={120} height={30} alt="Espento" />
+          <Image src="/images/logo.svg" width={120} height={30} alt="Espento" />
         </Link>
 
         {/* ////////////////// Desktop ////////////////// */}
