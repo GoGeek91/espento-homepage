@@ -31,7 +31,7 @@ export default function About() {
           </p>
         </div>
         <div className="space-y-2">
-          <h2 className="text-white font-medium text-sm tracking-wider">Who Are Espento's Founders?</h2>
+          <h2 className="text-white font-medium text-sm tracking-wider">Who Are Espento&lsquo;s Founders?</h2>
           <p className="text-white font-light text-sm tracking-wider text-justify">
             The Development Of The Espento Project Is Being Undertaken By The Developers From Different
             Countries Of The World As A Team. The Main Goal Of Espento Is To Achieve Decentralization Through
@@ -56,14 +56,14 @@ export default function About() {
           </p>
           <p className="text-white font-light text-sm tracking-wider text-justify">
             These Loans Are Made Possible By A Pool Of Funds Supplied By Espento Users, Who Earn A Variable
-            APY In Return For Their Inputs. These Loans Are Backed By Borrowers' Over-Collateralized Deposits
+            APY In Return For Their Inputs. These Loans Are Backed By Borrowers, Over-Collateralized Deposits
             On The Platform.
           </p>
           <p className="text-white font-light text-sm tracking-wider text-justify">
             To Prevent Market Manipulation Attacks, The Espento Protocol Employs Price Feed Oracles, Such As
             Those Provided By Chainlink, To Supply Reliable Pricing Data That Cannot Be Tampered With. The
             Binance Smart Chain Allows The Protocol To Acquire Pricing Feeds At A Cheaper Cost And With
-            Greater Efficiency, Lowering The System's Overall Cost Footprint.
+            Greater Efficiency, Lowering The System&lsquo;s Overall Cost Footprint.
           </p>
         </div>
       </div>

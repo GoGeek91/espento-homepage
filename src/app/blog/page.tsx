@@ -49,7 +49,7 @@ const Blog = async () => {
       <div className="">
         {LATEST_POST.map((latest: any) => (
           <Link key={latest.slug} href={`${routes.blog}/${latest.slug}`} passHref>
-            <div className="hidden cursor-pointer grid-cols-1 rounded-lg bg-white text-justify shadow-lg lg:grid lg:grid-cols-2 xl:grid">
+            <div className="hidden cursor-pointer grid-cols-1 rounded-lg bg-[#222531] border border-[#353743] text-justify shadow-lg lg:grid lg:grid-cols-2 xl:grid">
               <div className="flex">
                 <img
                   alt="Espento"
@@ -59,17 +59,19 @@ const Blog = async () => {
               </div>
               <div className="p-6">
                 <div className="space-y-4">
-                  <h2>Latest</h2>
+                  <h2 className="text-secondary-default text-sm text-opacity-60">Latest</h2>
                   <div className="flex items-center space-x-3">
-                    <h2> {latest.frontmatter.category.Date}</h2>
-                    <h2>{latest.frontmatter.category.blogCategory}</h2>
+                    <h2 className="text-secondary-default"> {latest.frontmatter.category.Date}</h2>
+                    <h2 className="text-secondary-default">{latest.frontmatter.category.blogCategory}</h2>
                   </div>
                   <div className="">
-                    <div className="mb-2 h-40 space-y-1">
-                      <h2>{latest.frontmatter.title}</h2>
-                      <h2>{latest.frontmatter.description}</h2>
+                    <div className="mb-2 h-40 space-y-3">
+                      <h2 className="text-secondary-default text-2xl">{latest.frontmatter.title}</h2>
+                      <h2 className="text-secondary-default text-lg font-light">
+                        {latest.frontmatter.description}
+                      </h2>
                     </div>
-                    <div className="mt-8 flex items-center">
+                    <div className="mt-8 flex items-center text-secondary-default">
                       <UserCircleIcon className="mr-2 h-5 w-5" />
                       <h2>By {latest.frontmatter.authorName}</h2>
                     </div>
