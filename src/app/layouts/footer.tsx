@@ -21,7 +21,7 @@ interface NavtigationDto {
 
 const navigation: NavtigationDto = {
   About: [
-    { name: "Espento Profile", href: "https://espento.com/profile" },
+    { name: "Espento Profile", href: "/about" },
     { name: "Terms of Use", href: "https://espento.com/terms" },
     { name: "Privacy Policy", href: "https://espento.com/policy" },
     { name: "Disclaimer", href: "https://espento.com/disclaimer" },
