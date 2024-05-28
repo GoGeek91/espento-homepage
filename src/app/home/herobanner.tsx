@@ -6,6 +6,9 @@ import React from "react";
 export const Herobanner = () => {
   return (
     <>
+      <video autoPlay loop muted playsInline className="absolute w-full opacity-60">
+        <source src="images/background.mp4" />
+      </video>
       <div className="relative z-40 mx-auto max-w-7xl space-y-5 px-4 pb-4 pt-4 sm:space-y-10 sm:px-6 sm:pt-10 sm:pb-10 md:space-y-10 md:pt-10 md:pb-10 lg:space-y-10 lg:px-8 lg:pt-10 lg:pb-10 xl:space-y-10 xl:pt-10 xl:pb-10">
         <div className="grid grid-cols-1 pt-0 sm:grid-cols-2 sm:pt-24 md:grid-cols-2 md:pt-24 lg:grid-cols-2 lg:pt-24 xl:grid-cols-2 xl:pt-24">
           <div className="mt-8 space-y-6 sm:mt-0 md:mt-0 lg:mt-0 xl:mt-0">

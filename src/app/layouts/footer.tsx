@@ -22,11 +22,11 @@ interface NavtigationDto {
 const navigation: NavtigationDto = {
   About: [
     { name: "Espento Profile", href: "/about" },
-    { name: "Terms of Use", href: "https://espento.com/terms" },
-    { name: "Privacy Policy", href: "https://espento.com/policy" },
-    { name: "Disclaimer", href: "https://espento.com/disclaimer" },
-    { name: "Careers", href: "https://espento.com/career", info: "Hiring" },
-    { name: "Espento Tokenomics", href: "https://espento.com/tokenomics" },
+    { name: "Terms of Use", href: "/terms" },
+    { name: "Privacy Policy", href: "/policy" },
+    { name: "Disclaimer", href: "/disclaimer" },
+    { name: "Careers", href: "/careers", info: "Hiring" },
+    { name: "Espento Tokenomics", href: "/tokenomics" },
     {
       name: "SPENT Audit",
       href: "https://gopluslabs.io/token-security/56/0x178fbe1cf4775fbdb9756d6349195a05799c0fe5",
@@ -46,7 +46,7 @@ const navigation: NavtigationDto = {
     { name: "Docs", href: "https://espento.com/info", info: "Soon" },
     { name: "Brand Assets", href: "https://espento.com/brandAssets" },
     { name: "Espento Whitepaper", href: "https://assets.espento.com/whitepaper.pdf", targetBlank: true },
-    { name: "Espento Blog", href: "https://espento.com/blog" },
+    { name: "Espento Blog", href: "/blog" },
     { name: "Support", href: "https://espento.com/support" },
     { name: "Contest", href: "https://espento.com/contest" },
     { name: "Espento Roadmap", href: "https://espento.com/roadmap" },

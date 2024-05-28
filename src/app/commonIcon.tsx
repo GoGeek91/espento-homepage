@@ -409,6 +409,96 @@ export const Facebook: React.FC<React.SVGAttributes<SVGElement>> = (props) => {
     </svg>
   );
 };
+export const CloseIcon: React.FC<React.SVGAttributes<SVGElement>> = (props) => {
+  return (
+    <svg viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" {...props}>
+      <path
+        d="M12.8536 2.85355C13.0488 2.65829 13.0488 2.34171 12.8536 2.14645C12.6583 1.95118 12.3417 1.95118 12.1464 2.14645L7.5 6.79289L2.85355 2.14645C2.65829 1.95118 2.34171 1.95118 2.14645 2.14645C1.95118 2.34171 1.95118 2.65829 2.14645 2.85355L6.79289 7.5L2.14645 12.1464C1.95118 12.3417 1.95118 12.6583 2.14645 12.8536C2.34171 13.0488 2.65829 13.0488 2.85355 12.8536L7.5 8.20711L12.1464 12.8536C12.3417 13.0488 12.6583 13.0488 12.8536 12.8536C13.0488 12.6583 13.0488 12.3417 12.8536 12.1464L8.20711 7.5L12.8536 2.85355Z"
+        fill="currentColor"
+        fill-rule="evenodd"
+        clip-rule="evenodd"
+      ></path>
+    </svg>
+  );
+};
+export const EmailIcon: React.FC<React.SVGAttributes<SVGElement>> = (props) => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke-width="1.5"
+      stroke="currentColor"
+      aria-hidden="true"
+      {...props}
+    >
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        d="M21.75 9v.906a2.25 2.25 0 01-1.183 1.981l-6.478 3.488M2.25 9v.906a2.25 2.25 0 001.183 1.981l6.478 3.488m8.839 2.51l-4.66-2.51m0 0l-1.023-.55a2.25 2.25 0 00-2.134 0l-1.022.55m0 0l-4.661 2.51m16.5 1.615a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V8.844a2.25 2.25 0 011.183-1.98l7.5-4.04a2.25 2.25 0 012.134 0l7.5 4.04a2.25 2.25 0 011.183 1.98V19.5z"
+      ></path>
+    </svg>
+  );
+};
+export const PressIcon: React.FC<React.SVGAttributes<SVGElement>> = (props) => {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" {...props} x="0" y="0" viewBox="0 0 60 60">
+      <g>
+        <path
+          d="M8 60h44a8 8 0 0 0 8-8V25a3 3 0 0 0-3-3H46V4a4 4 0 0 0-4-4H4a4 4 0 0 0-4 4v48a8.009 8.009 0 0 0 8 8Zm38-36h11a1 1 0 0 1 1 1v27a6 6 0 0 1-6 6h-.185A6.2 6.2 0 0 1 46 51.706ZM2 4a2 2 0 0 1 2-2h38a2 2 0 0 1 2 2v47.706A8.436 8.436 0 0 0 46.818 58H8a6.006 6.006 0 0 1-6-6Z"
+          fill="currentColor"
+          opacity="1"
+          data-original="currentColor"
+        ></path>
+        <path
+          d="M38 35v-2.189a1.706 1.706 0 0 0-3.012-1.1C33.718 33.208 31.646 34 29 34h-4a4.99 4.99 0 0 0-.746 9.925l1.569 4.707A2 2 0 0 0 27.721 50h1.891a2 2 0 0 0 1.9-2.633l-1.092-3.275a6.873 6.873 0 0 1 4.571 2.2 1.7 1.7 0 0 0 1.3.608 1.747 1.747 0 0 0 .6-.106A1.693 1.693 0 0 0 38 45.189V43a4 4 0 0 0 0-8Zm-13 7a3 3 0 0 1 0-6h3v6Zm2.721 6-1.334-4h1.893l1.332 4ZM36 44.45a9.281 9.281 0 0 0-6-2.407v-6.086a9.284 9.284 0 0 0 6-2.407ZM38 41v-4a2 2 0 0 1 0 4ZM5 24h36a1 1 0 0 0 0-2H5a1 1 0 0 0 0 2ZM5 19h36a1 1 0 0 0 0-2H5a1 1 0 0 0 0 2ZM5 29h36a1 1 0 0 0 0-2H5a1 1 0 0 0 0 2ZM5 54h34a1 1 0 0 0 0-2H5a1 1 0 0 0 0 2ZM5 34h12a1 1 0 0 0 0-2H5a1 1 0 0 0 0 2ZM5 39h12a1 1 0 0 0 0-2H5a1 1 0 0 0 0 2ZM5 44h12a1 1 0 0 0 0-2H5a1 1 0 0 0 0 2ZM5 49h10a1 1 0 0 0 0-2H5a1 1 0 0 0 0 2ZM21 14h3a1 1 0 0 0 0-2h-2v-2h1a1 1 0 0 0 0-2h-1V6h2a1 1 0 0 0 0-2h-3a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1ZM5 14a1 1 0 0 0 1-1v-3h1a3 3 0 0 0 0-6H5a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1Zm1-8h1a1 1 0 0 1 0 2H6ZM13 14a1 1 0 0 0 1-1v-3h1a1 1 0 0 1 1 1v2a1 1 0 0 0 2 0v-2a2.981 2.981 0 0 0-.78-2A2.987 2.987 0 0 0 15 4h-2a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1Zm1-8h1a1 1 0 0 1 0 2h-1ZM30 10a1 1 0 1 1-.867 1.5 1 1 0 0 0-1.731 1A3 3 0 1 0 30 8a1 1 0 1 1 .867-1.5 1 1 0 0 0 1.731-1A3 3 0 1 0 30 10ZM38 10a1 1 0 1 1-.867 1.5 1 1 0 0 0-1.731 1A3 3 0 1 0 38 8a1 1 0 1 1 .867-1.5 1 1 0 0 0 1.731-1A3 3 0 1 0 38 10Z"
+          fill="currentColor"
+          opacity="1"
+          data-original="currentColor"
+        ></path>
+      </g>
+    </svg>
+  );
+};
+export const MessageIcon: React.FC<React.SVGAttributes<SVGElement>> = (props) => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke-width="1.5"
+      stroke="currentColor"
+      aria-hidden="true"
+      {...props}
+    >
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        d="M8.625 9.75a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H8.25m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H12m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0h-.375m-13.5 3.01c0 1.6 1.123 2.994 2.707 3.227 1.087.16 2.185.283 3.293.369V21l4.184-4.183a1.14 1.14 0 01.778-.332 48.294 48.294 0 005.83-.498c1.585-.233 2.708-1.626 2.708-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z"
+      ></path>
+    </svg>
+  );
+};
+export const MapIcons: React.FC<React.SVGAttributes<SVGElement>> = (props) => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke-width="1.5"
+      stroke="currentColor"
+      aria-hidden="true"
+      {...props}
+    >
+      <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"></path>
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"
+      ></path>
+    </svg>
+  );
+};
 
 export const MenuIcon: React.FC<React.SVGAttributes<SVGElement>> = (props) => {
   return (

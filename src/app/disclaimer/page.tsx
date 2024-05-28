@@ -4,67 +4,62 @@ export default function About() {
   return (
     <div className="mx-auto max-w-5xl items-center justify-between space-y-20 py-8 px-4 sm:px-8 md:px-8 lg:py-24 lg:px-8 xl:py-24 xl:px-8">
       <div className="text-center">
-        <h2 className="text-5xl text-white">About Us</h2>
+        <h2 className="text-5xl text-white">Disclaimer</h2>
       </div>
 
       <div className="space-y-7 ">
         <div className="space-y-2">
-          <h2 className="text-white font-medium text-sm tracking-wider">What Is Espento ?</h2>
+          <h2 className="text-white font-medium text-base tracking-wider">
+            Legal Disclaimer And Risk Caution
+          </h2>
           <p className="text-white font-light text-sm tracking-wider text-justify">
-            Espento Is An Algorithmic Money Market Created Solely On Binance Smart Chain (BSC).
-          </p>
-          <p className="text-white font-light text-sm tracking-wider text-justify">
-            The Protocol Brings To The Decentralised Finance (DeFi) Ecosystem A Simple Crypto Asset Swap,
-            Bridge, Stake And Lending-Borrowing Solution. Allowing Users To Borrow Directly Against Collateral
-            At Rapid Speeds While Incurring Less Transaction Costs. In Addition, Espento Allows Users To
-            Bridge Cross-Chain Assets To EUSD Stablecoins On-Demand Within Seconds By Posting Needed Assets To
-            The Espento Bridge Smart Contract.
-          </p>
-          <p className="text-white font-light text-sm tracking-wider text-justify">
-            EUSD Tokens Are BEP-20 Token Assets, Whereas SPENT Tokens Are Likewise BEP-20-Based, But Are Used
-            For Espento Protocol Governance And May Be Used To Vote On Updates. Includes New Collateral Types,
-            Parameter Changes, And Product Improvement Organisation.
-          </p>
-          <p className="text-white font-light text-sm tracking-wider text-justify">
-            The Governance Of The Protocol Is Entirely Controlled By Espento DAO Community Members, Since The
-            Espento Founders, Team Members And Other Advisors Do Have Any SPENT Token Allocations.
+            Participating in an crypto trading is a high-risk activity. This crypto trading in particular is
+            only aimed at experienced professionals who are used to blockchain technology. By participating in
+            this crypto trading, the purchaser is aware and accepts the risks related to security, the
+            potential lack of technical and economic results and the total or partial loss of its capital.
+            Finally, the purchaser declares being aware of the legal uncertainty of this type of transaction
+            and to have conducted his own legal guidance according to the applicable law to which he
+            subscribes. Indeed, the token grants no financial (income, capital or dividend). The token is a
+            crypto-asset issued by Decentral Autonomous Platform (Community) through the platform instruments
+            and used by the members of the espento.com platform and community. No other rights are transferred
+            upon the trading. Precisely, the Community’s only obligation is to distribute the SPENT token
+            under the conditions defined in the official publications.
           </p>
         </div>
         <div className="space-y-2">
-          <h2 className="text-white font-medium text-sm tracking-wider">Who Are Espento&lsquo;s Founders?</h2>
+          <h2 className="text-white font-medium text-base tracking-wider">Sales Restriction</h2>
           <p className="text-white font-light text-sm tracking-wider text-justify">
-            The Development Of The Espento Project Is Being Undertaken By The Developers From Different
-            Countries Of The World As A Team. The Main Goal Of Espento Is To Achieve Decentralization Through
-            Community-Governance. There Are No Pre-Mines For The Team, Developers, Giving SPENT Holders Total
-            Control Over The Path The Espento Protocol Takes.
+            Due to national legislation, participants from the following countries are not allowed to
+            participate in the platform : “US person” (as per this definition), Canada, South Korea, Burma,
+            Cote D'Ivoire (Ivory Coast), Cuba, Democratic Republic of Congo, Iran, Iraq, Liberia, North Korea,
+            Sudan, Syria, and Zimbabwe, Singapore and China. This prohibition applies to all types of people
+            (moral, physical, agent, etc.) and to any indirect participation (via a proxy, a name loan, a
+            limited company, etc.). By participating in the platform, the purchaser agrees to the legal
+            disclaimer and, especially, that he respects the above provisions community.
           </p>
         </div>
         <div className="space-y-2">
-          <h2 className="text-white font-medium text-sm tracking-wider">What Makes Espento Unique?</h2>
+          <h2 className="text-white font-medium text-base tracking-wider">Warnings</h2>
           <p className="text-white font-light text-sm tracking-wider text-justify">
-            The Key Strength Of Espento Is Its Fast Speed And Incredibly Cheap Transaction Fees, Which Are A
-            Direct Result Of Its Build On Top Of The Binance Smart Chain. The Protocol Is The First To Allow
-            Users To Have Real-Time Access To Liquidity Pool For BNB, BUSD, USDT(TRC20), BTC, ETH And Other
-            Cryptocurrencies Via Bridging Protocol.
+            Trading the crypto are high risk operations because of their experimental nature. By participating
+            in this operation, participants declare to understand and assume the following risks:
           </p>
-          <p className="text-white font-light text-sm tracking-wider text-justify">
-            Users Seeking Liquidity Using The Espento Protocol Do Not Need To Pass A Credit Check And May Get
-            A Loan Immediately By Interacting With The Espento Decentralised Application (DApp). Users Are Not
-            Restricted By Their Geographic Region, Credit Score, Or Anything Else Because There Are No
-            Centralised Authorities In Existence, And May Always Obtain Liquidity By Providing Necessary
-            Collateral.
-          </p>
-          <p className="text-white font-light text-sm tracking-wider text-justify">
-            These Loans Are Made Possible By A Pool Of Funds Supplied By Espento Users, Who Earn A Variable
-            APY In Return For Their Inputs. These Loans Are Backed By Borrowers, Over-Collateralized Deposits
-            On The Platform.
-          </p>
-          <p className="text-white font-light text-sm tracking-wider text-justify">
-            To Prevent Market Manipulation Attacks, The Espento Protocol Employs Price Feed Oracles, Such As
-            Those Provided By Chainlink, To Supply Reliable Pricing Data That Cannot Be Tampered With. The
-            Binance Smart Chain Allows The Protocol To Acquire Pricing Feeds At A Cheaper Cost And With
-            Greater Efficiency, Lowering The System&lsquo;s Overall Cost Footprint.
-          </p>
+          <ul className="space-y-3 list-disc list-inside">
+            <li className="text-white font-light text-sm tracking-wider text-justify">
+              Whe lack of regulation: the purchaser agrees not to benefit from any guarantees associated with
+              sales on regulated financial markets or other regulated financial investments.
+            </li>
+            <li className="text-sm text-white font-light">
+              Capital loss: the purchaser accepts the risk of a total or partial capital loss in
+              cryptocurrency or in the token.
+            </li>
+            <li className="text-sm text-white font-light">
+              Volatility or market risk: the value of tokens, just like that of cryptocurrencies in general,
+              can be extremely volatile and subject to significant, and largely unforeseeable fluctuations.
+              Moreover, the market or markets on which these tokens are traded do not offer the same
+              guarantees that are generally applicable to conventional financial markets.
+            </li>
+          </ul>
         </div>
       </div>
     </div>

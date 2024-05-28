@@ -9,7 +9,7 @@ export default function About() {
 
       <div className="space-y-7 ">
         <div className="space-y-2">
-          <h2 className="text-white font-medium text-sm tracking-wider">What Is Espento ?</h2>
+          <h2 className="text-white font-medium text-base tracking-wider">What Is Espento ?</h2>
           <p className="text-white font-light text-sm tracking-wider text-justify">
             Espento Is An Algorithmic Money Market Created Solely On Binance Smart Chain (BSC).
           </p>
@@ -31,7 +31,9 @@ export default function About() {
           </p>
         </div>
         <div className="space-y-2">
-          <h2 className="text-white font-medium text-sm tracking-wider">Who Are Espento&lsquo;s Founders?</h2>
+          <h2 className="text-white font-medium text-base tracking-wider">
+            Who Are Espento&lsquo;s Founders?
+          </h2>
           <p className="text-white font-light text-sm tracking-wider text-justify">
             The Development Of The Espento Project Is Being Undertaken By The Developers From Different
             Countries Of The World As A Team. The Main Goal Of Espento Is To Achieve Decentralization Through
@@ -40,7 +42,7 @@ export default function About() {
           </p>
         </div>
         <div className="space-y-2">
-          <h2 className="text-white font-medium text-sm tracking-wider">What Makes Espento Unique?</h2>
+          <h2 className="text-white font-medium text-base tracking-wider">What Makes Espento Unique?</h2>
           <p className="text-white font-light text-sm tracking-wider text-justify">
             The Key Strength Of Espento Is Its Fast Speed And Incredibly Cheap Transaction Fees, Which Are A
             Direct Result Of Its Build On Top Of The Binance Smart Chain. The Protocol Is The First To Allow
