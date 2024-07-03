@@ -44,12 +44,12 @@ const navigation: NavtigationDto = {
   ],
   Resources: [
     { name: "Docs", href: "https://espento.com/info", info: "Soon" },
-    { name: "Brand Assets", href: "https://espento.com/brandAssets" },
+    { name: "Brand Assets", href: "/brandAssets" },
     { name: "Espento Whitepaper", href: "https://assets.espento.com/whitepaper.pdf", targetBlank: true },
     { name: "Espento Blog", href: "/blog" },
-    { name: "Support", href: "https://espento.com/support" },
-    { name: "Contest", href: "https://espento.com/contest" },
-    { name: "Espento Roadmap", href: "https://espento.com/roadmap" },
+    { name: "Support", href: "/support" },
+    { name: "Espento Roadmap", href: "/roadmap" },
+    { name: "Institutions", href: "/" },
   ],
   Community: [
     { name: "Twitter", href: "https://twitter.com/espentoofficial" },
