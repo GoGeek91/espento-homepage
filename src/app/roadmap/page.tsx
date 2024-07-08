@@ -10,6 +10,7 @@ import "swiper/css/navigation";
 import { ChevronDoubleLeftIcon, ChevronDoubleRightIcon } from "@heroicons/react/20/solid";
 import { cn } from "@/libs/utils";
 import { Navigation } from "swiper/modules";
+import Image from "next/image";
 
 export default function Roadmap() {
   return (
@@ -54,7 +55,7 @@ export default function Roadmap() {
             <SwiperSlide key={R_DATA.id}>
               <div className="overflow-hidden rounded-xl bg-[#2e313e] border border-[#434551]">
                 <div className="bg-primary-default flex items-center gap-x-4 border-b border-gray-900/5 p-4">
-                  <img
+                  <Image
                     src={R_DATA.icon}
                     alt="Espento"
                     className="h-12 w-12 flex-none rounded-lg bg-white p-1"

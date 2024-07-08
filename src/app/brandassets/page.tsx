@@ -35,7 +35,7 @@ export default function BrandAsset() {
         <div className="relative p-8 bg-[#2e313e] border border-[#434551] rounded-3xl space-y-4">
           <div className="space-y-10">
             <div className="mx-auto space-y-6 max-w-xl text-center">
-              <h2 className="text-5xl text-white">Let's build the Espento brand together!</h2>
+              <h2 className="text-5xl text-white">Let&lsquo;s build the Espento brand together!</h2>
               <p className="text-white text-opacity-80 font-light text-base">
                 These guidelines will help us create and maintain a consistent brand presence and experience
                 worldwide.
@@ -62,7 +62,7 @@ export default function BrandAsset() {
           </div>
           <div className="grid xl:grid-cols-3 lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-3 gap-8">
             {brandAsset.map((brandAssets) => (
-              <div className="border border-[#484848] rounded-xl">
+              <div key={brandAssets.logo} className="border border-[#484848] rounded-xl">
                 <div className="bg-[#2e313e] border border-[#434551] mx-auto flex justify-center p-6 rounded-xl w-full">
                   <div className="">
                     <Image src={brandAssets.logo} width={180} height={80} alt="espento logo" />

@@ -1,3 +1,4 @@
+import { Images } from "lucide-react";
 import Image from "next/image";
 const MetamaskWallet = "https://assets.espento.com/images/homePage/metamaskWallet.svg";
 const Coincapmarket = "https://assets.espento.com/images/homePage/coinmarketcap.svg";
@@ -112,7 +113,7 @@ export function Footer() {
                     className="flex items-center space-x-0.5 xl:text-xs lg:text-xs md:text-xs sm:text-xs text-sm  font-light text-white opacity-70 hover:opacity-100"
                   >
                     <span> {item.name}</span>
-                    {item.icon && <img src={item.icon} className="w-5" alt="Espento" />}
+                    {item.icon && <Image src={item.icon} width={20} height={20} alt="Espento" />}
                   </Link>
                   {item.info && (
                     <div className="bg-primary-default text-white text-xs rounded-full px-1">{item.info}</div>

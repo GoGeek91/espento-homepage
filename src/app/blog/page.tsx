@@ -6,6 +6,7 @@ import Link from "next/link";
 import { UserCircleIcon } from "@heroicons/react/24/outline";
 import RootLayout from "../layout";
 import routes from "@/config/routes";
+import Image from "next/image";
 
 const fetchPosts = () => {
   const files = fs.readdirSync("src/config/blog_post");
@@ -51,7 +52,7 @@ const Blog = async () => {
           <Link key={latest.slug} href={`${routes.blog}/${latest.slug}`} passHref>
             <div className="hidden cursor-pointer grid-cols-1 rounded-lg bg-[#222531] border border-[#353743] text-justify shadow-lg lg:grid lg:grid-cols-2 xl:grid">
               <div className="flex">
-                <img
+                <Image
                   alt="Espento"
                   src={latest.frontmatter.socialImage}
                   className="rounded-lg lg:rounded-l-lg xl:rounded-l-lg"
@@ -92,7 +93,7 @@ const Blog = async () => {
               <Link href={`${routes.blog}/${slug}`} passHref className="cursor-pointer">
                 <div className="flex flex-col overflow-hidden">
                   <div className="relative flex h-full md:h-52 lg:h-52 xl:h-52">
-                    <img alt={frontmatter.title} src={frontmatter.socialImage} className="rounded-lg" />
+                    <Image alt={frontmatter.title} src={frontmatter.socialImage} className="rounded-lg" />
                   </div>
                   <div className="flex flex-1 flex-col justify-between space-y-5 p-6 text-justify">
                     <div className="flex-1 space-y-4">

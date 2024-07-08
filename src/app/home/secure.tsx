@@ -52,7 +52,8 @@ export const Secure = () => {
               key={secureBoxs.id}
               className="border-secondary-dark card-gradient relative rounded-3xl border p-6 text-left"
             >
-              <img
+              <Image
+                alt="espento"
                 src="/images/developer-bg-blue.svg"
                 className="absolute left-0 top-0 w-full object-cover opacity-20"
               />
