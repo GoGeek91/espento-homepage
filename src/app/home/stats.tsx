@@ -12,11 +12,11 @@ export const Stats = () => {
       <div className="">
         {/* Background gradient */}
         <div className="absolute left-10 z-40">
-          <Image src="images/stats/stats.svg" alt="" />
+          <Image src="images/stats/stats.svg" alt="espento" width={400} height={400} />
         </div>
         {/* Background gradient2 */}
         <div className="absolute right-32 z-40 -mt-10">
-          <Image src="images/stats/statsBg.svg" alt="" />
+          <Image src="images/stats/statsBg.svg" alt="" width={120} height={40} />
         </div>
       </div>
       <div className="border-secondary-dark relative space-y-8 rounded-3xl border bg-black bg-opacity-100 p-8 text-center sm:space-y-10 md:space-y-10 lg:space-y-10 xl:space-y-10">

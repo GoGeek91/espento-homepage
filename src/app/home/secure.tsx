@@ -55,6 +55,8 @@ export const Secure = () => {
               <Image
                 alt="espento"
                 src="/images/developer-bg-blue.svg"
+                width={400}
+                height={400}
                 className="absolute left-0 top-0 w-full object-cover opacity-20"
               />
 

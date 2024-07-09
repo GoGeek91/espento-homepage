@@ -57,7 +57,7 @@ export const Herobanner = () => {
       </div>
 
       <div className="absolute right-44 top-0">
-        <Image src="images/backgroundHerobanner.svg" alt="" />
+        <Image src="images/backgroundHerobanner.svg" alt="espento Banner" width={1000} height={1000} />
       </div>
     </>
   );
