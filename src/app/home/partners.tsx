@@ -2,7 +2,6 @@ import { ThreeStarIcon } from "../commonIcon";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import { YoutubeModal } from "./youtubeVideo";
 
 const marqueSlider = [
   {
@@ -68,7 +67,6 @@ export const Partners = () => {
                     Building Strong Collaborations and Community Engagement
                   </p>
                 </div>
-                <YoutubeModal />
               </div>
               <div className="items-center space-y-6">
                 <div className="w-full">
