@@ -55,6 +55,8 @@ const Blog = async () => {
                 <Image
                   alt="Espento"
                   src={latest.frontmatter.socialImage}
+                  width={300}
+                  height={300}
                   className="rounded-lg lg:rounded-l-lg xl:rounded-l-lg"
                 />
               </div>
@@ -93,7 +95,13 @@ const Blog = async () => {
               <Link href={`${routes.blog}/${slug}`} passHref className="cursor-pointer">
                 <div className="flex flex-col overflow-hidden">
                   <div className="relative flex h-full md:h-52 lg:h-52 xl:h-52">
-                    <Image alt={frontmatter.title} src={frontmatter.socialImage} className="rounded-lg" />
+                    <Image
+                      alt={frontmatter.title}
+                      src={frontmatter.socialImage}
+                      className="rounded-lg"
+                      width={300}
+                      height={300}
+                    />
                   </div>
                   <div className="flex flex-1 flex-col justify-between space-y-5 p-6 text-justify">
                     <div className="flex-1 space-y-4">

@@ -1,93 +1,93 @@
-import { CheckIcon, ClockIcon, PlusCircleIcon } from '@heroicons/react/24/outline'
-import { ArrowPathIcon, CheckCircleIcon } from '@heroicons/react/24/solid'
+import { CheckIcon, ClockIcon, PlusCircleIcon } from "@heroicons/react/24/outline";
+import { ArrowPathIcon, CheckCircleIcon } from "@heroicons/react/24/solid";
 
 interface IStatus {
-  icon: typeof CheckIcon
-  color: string
+  icon: typeof CheckIcon;
+  color: string;
 }
 interface F_STAUTS {
-  Done: IStatus
-  Processing: IStatus
-  Pending: IStatus
+  Done: IStatus;
+  Processing: IStatus;
+  Pending: IStatus;
 }
 const FEATURE_STATUS: F_STAUTS = {
   Done: {
-    color: 'bg-[#12bd94] text-white',
+    color: "bg-[#12bd94] text-white",
     icon: CheckIcon,
   },
   Processing: {
-    color: 'text-[#fff] bg-[#455cff] animate-spin',
+    color: "text-[#fff] bg-[#455cff] animate-spin",
     icon: ArrowPathIcon,
   },
   Pending: {
-    color: 'text-[#fff] bg-[#4e5f87] animate-pulse',
+    color: "text-[#fff] bg-[#4e5f87] animate-pulse",
     icon: ClockIcon,
   },
-} as const
+} as const;
 
 interface IFeatures {
-  id: string
-  title: string
-  status: IStatus
+  id: string;
+  title: string;
+  status: IStatus;
 }
 interface IRoadmap {
-  id: string
-  title: string
-  icon: string
-  features: IFeatures[]
+  id: string;
+  title: string;
+  icon: string;
+  features: IFeatures[];
 }
 
 export const ROADMAP_DATA: IRoadmap[] = [
   //  Q4 2022
 
   {
-    id: '01',
-    icon: 'https://assets.espento.com/images/roadmap/q1.png',
-    title: 'Q4, 2022',
+    id: "01",
+    icon: "https://assets.espento.com/images/roadmap/q1.png",
+    title: "Q4, 2022",
     features: [
       {
-        id: '1',
-        title: 'SPENT Token Creation',
+        id: "1",
+        title: "SPENT Token Creation",
         status: FEATURE_STATUS.Done,
       },
       {
-        id: '2',
-        title: 'Whitepaper',
+        id: "2",
+        title: "Whitepaper",
         status: FEATURE_STATUS.Done,
       },
       {
-        id: '3',
-        title: 'Swap Protocol',
+        id: "3",
+        title: "Swap Protocol",
         status: FEATURE_STATUS.Done,
       },
       {
-        id: '4',
-        title: 'Yield Farm Protocol',
+        id: "4",
+        title: "Yield Farm Protocol",
         status: FEATURE_STATUS.Done,
       },
       {
-        id: '4',
-        title: 'Staking Protocol',
+        id: "4",
+        title: "Staking Protocol",
         status: FEATURE_STATUS.Done,
       },
       {
-        id: '4',
-        title: 'Bridge Development',
+        id: "4",
+        title: "Bridge Development",
         status: FEATURE_STATUS.Done,
       },
       {
-        id: '4',
-        title: 'BUSD Pegged-Stable Token',
+        id: "4",
+        title: "BUSD Pegged-Stable Token",
         status: FEATURE_STATUS.Done,
       },
       {
-        id: '4',
-        title: 'LP Tokens -Smart Contract',
+        id: "4",
+        title: "LP Tokens -Smart Contract",
         status: FEATURE_STATUS.Done,
       },
       {
-        id: '4',
-        title: 'Add SPENT To Pancake Swap',
+        id: "4",
+        title: "Add SPENT To Pancake Swap",
         status: FEATURE_STATUS.Done,
       },
     ],
@@ -95,38 +95,38 @@ export const ROADMAP_DATA: IRoadmap[] = [
 
   //  Q1 2023
   {
-    id: '02',
-    icon: 'https://assets.espento.com/images/roadmap/q2.png',
-    title: 'Q1 2023',
+    id: "02",
+    icon: "https://assets.espento.com/images/roadmap/q2.png",
+    title: "Q1 2023",
     features: [
       {
-        id: '1',
-        title: 'Lending-Borrowing Protocol',
+        id: "1",
+        title: "Lending-Borrowing Protocol",
         status: FEATURE_STATUS.Processing,
       },
       {
-        id: '2',
-        title: 'DAO Protocol',
+        id: "2",
+        title: "DAO Protocol",
         status: FEATURE_STATUS.Processing,
       },
       {
-        id: '2',
-        title: 'Payment Gateway',
+        id: "2",
+        title: "Payment Gateway",
         status: FEATURE_STATUS.Processing,
       },
       {
-        id: '2',
-        title: 'Game Development v1.0',
+        id: "2",
+        title: "Game Development v1.0",
         status: FEATURE_STATUS.Processing,
       },
       {
-        id: '2',
-        title: 'List Project On Coingecko',
+        id: "2",
+        title: "List Project On Coingecko",
         status: FEATURE_STATUS.Done,
       },
       {
-        id: '2',
-        title: 'List Project On Coinmarketcap',
+        id: "2",
+        title: "List Project On Coinmarketcap",
         status: FEATURE_STATUS.Done,
       },
     ],
@@ -134,48 +134,48 @@ export const ROADMAP_DATA: IRoadmap[] = [
 
   //  Q2 2023
   {
-    id: '03',
-    icon: 'https://assets.espento.com/images/roadmap/q3.png',
-    title: 'Q2 2023',
+    id: "03",
+    icon: "https://assets.espento.com/images/roadmap/q3.png",
+    title: "Q2 2023",
     features: [
       {
-        id: '1',
-        title: 'Launchpad',
+        id: "1",
+        title: "Launchpad",
         status: FEATURE_STATUS.Pending,
       },
       {
-        id: '3',
-        title: 'Game Development v2.0',
+        id: "3",
+        title: "Game Development v2.0",
         status: FEATURE_STATUS.Pending,
       },
       {
-        id: '4',
-        title: 'Dex With Layer 2 Solution',
+        id: "4",
+        title: "Dex With Layer 2 Solution",
         status: FEATURE_STATUS.Pending,
       },
       {
-        id: '5',
-        title: 'Contract Deployment On Ethereum',
+        id: "5",
+        title: "Contract Deployment On Ethereum",
         status: FEATURE_STATUS.Pending,
       },
       {
-        id: '6',
-        title: 'Contract Deployment On Avalanche',
+        id: "6",
+        title: "Contract Deployment On Avalanche",
         status: FEATURE_STATUS.Pending,
       },
       {
-        id: '7',
-        title: 'Contract Deployment On Arbitrum',
+        id: "7",
+        title: "Contract Deployment On Arbitrum",
         status: FEATURE_STATUS.Pending,
       },
       {
-        id: '7',
-        title: 'Contract Deployment On Polygon',
+        id: "7",
+        title: "Contract Deployment On Polygon",
         status: FEATURE_STATUS.Pending,
       },
       {
-        id: '8',
-        title: 'Contract Deployment On Fantom',
+        id: "8",
+        title: "Contract Deployment On Fantom",
         status: FEATURE_STATUS.Pending,
       },
     ],
@@ -183,43 +183,43 @@ export const ROADMAP_DATA: IRoadmap[] = [
 
   //  Q3 2023
   {
-    id: '04',
-    icon: 'https://assets.espento.com/images/roadmap/q4.png',
-    title: 'Q3 2023',
+    id: "04",
+    icon: "https://assets.espento.com/images/roadmap/q4.png",
+    title: "Q3 2023",
     features: [
       {
-        id: '1',
-        title: 'Espento Name Service(ENS)',
+        id: "1",
+        title: "Espento Name Service(ENS)",
         status: FEATURE_STATUS.Pending,
       },
       {
-        id: '2',
-        title: 'Web3 Wallet',
+        id: "2",
+        title: "Web3 Wallet",
         status: FEATURE_STATUS.Pending,
       },
       {
-        id: '3',
-        title: 'Limit Order Protocol',
+        id: "3",
+        title: "Limit Order Protocol",
         status: FEATURE_STATUS.Pending,
       },
       {
-        id: '4',
-        title: 'Aggregation Protocol ',
+        id: "4",
+        title: "Aggregation Protocol ",
         status: FEATURE_STATUS.Pending,
       },
       {
-        id: '5',
-        title: 'Game Development v3.0',
+        id: "5",
+        title: "Game Development v3.0",
         status: FEATURE_STATUS.Pending,
       },
       {
-        id: '6',
-        title: 'Blockchain Research',
+        id: "6",
+        title: "Blockchain Research",
         status: FEATURE_STATUS.Pending,
       },
       {
-        id: '7',
-        title: 'Metaverse Research',
+        id: "7",
+        title: "Metaverse Research",
         status: FEATURE_STATUS.Pending,
       },
     ],
@@ -227,45 +227,45 @@ export const ROADMAP_DATA: IRoadmap[] = [
 
   //  Q4 2023
   {
-    id: '05',
-    icon: 'https://assets.espento.com/images/roadmap/q5.png',
-    title: 'Q4 2023',
+    id: "05",
+    icon: "https://assets.espento.com/images/roadmap/q5.png",
+    title: "Q4 2023",
     features: [
       {
-        id: '1',
-        title: 'Game Development v4.0',
+        id: "1",
+        title: "Game Development v4.0",
         status: FEATURE_STATUS.Pending,
       },
       {
-        id: '2',
-        title: 'Blockchain Development',
+        id: "2",
+        title: "Blockchain Development",
         status: FEATURE_STATUS.Pending,
       },
       {
-        id: '3',
-        title: 'DPN With a Router',
+        id: "3",
+        title: "DPN With a Router",
         status: FEATURE_STATUS.Pending,
       },
       {
-        id: '4',
-        title: 'SPENT Integration With Payment Card Companies',
+        id: "4",
+        title: "SPENT Integration With Payment Card Companies",
         status: FEATURE_STATUS.Pending,
       },
       {
-        id: '5',
-        title: 'SPENT Integration With E-Commerce',
+        id: "5",
+        title: "SPENT Integration With E-Commerce",
         status: FEATURE_STATUS.Pending,
       },
       {
-        id: '6',
-        title: 'Espento Pay QR Code App',
+        id: "6",
+        title: "Espento Pay QR Code App",
         status: FEATURE_STATUS.Pending,
       },
       {
-        id: '7',
-        title: 'Metaverse Development',
+        id: "7",
+        title: "Metaverse Development",
         status: FEATURE_STATUS.Pending,
       },
     ],
   },
-]
+];

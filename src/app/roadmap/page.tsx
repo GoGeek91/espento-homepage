@@ -59,6 +59,8 @@ export default function Roadmap() {
                     src={R_DATA.icon}
                     alt="Espento"
                     className="h-12 w-12 flex-none rounded-lg bg-white p-1"
+                    width={200}
+                    height={200}
                   />
                   <p className="text-secondary-lighter">{R_DATA.title}</p>
                 </div>

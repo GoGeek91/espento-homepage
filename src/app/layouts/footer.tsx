@@ -50,7 +50,7 @@ const navigation: NavtigationDto = {
     { name: "Espento Blog", href: "/blog" },
     { name: "Support", href: "/support" },
     { name: "Espento Roadmap", href: "/roadmap" },
-    { name: "Institutions", href: "/" },
+    { name: "Institutions", href: "/institutions" },
   ],
   Community: [
     { name: "Twitter", href: "https://twitter.com/espentoofficial" },

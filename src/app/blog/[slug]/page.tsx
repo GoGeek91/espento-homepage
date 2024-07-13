@@ -40,7 +40,13 @@ const PostPage: FC<PostPageProps> = async ({ params }) => {
             </div>
           </div>
           <div className="mx-auto max-w-4xl space-y-10 text-justify">
-            <Image alt={frontmatter.title} src={frontmatter.socialImage} className="rounded-2xl" />
+            <Image
+              alt={frontmatter.title}
+              src={frontmatter.socialImage}
+              className="rounded-2xl"
+              width={300}
+              height={300}
+            />
           </div>
 
           <div className="blog-family prose max-w-2xl m-auto text-secondary-default">
